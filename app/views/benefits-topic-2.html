@@ -1,0 +1,150 @@
+{% extends "layouts/main.html" %}
+
+{% set pageName="Home" %}
+
+{% block main %}
+      <div class="big-header-block">
+        
+        <div class="govuk-width-container">
+    
+            <div class="govuk-grid-row">
+              <div class="govuk-grid-column-two-thirds">
+                <p class="govuk-body white-link"><a href="#">Home</a></p>
+                <h1 class="govuk-heading-xl">Benefits</h1>
+
+                <p class=""govuk-body-l">Includes eligibility, appeals, tax credits and Universal Credit
+                </p>
+            
+          </main>
+        </div>
+      </div>
+      <div class="govuk-width-container {{ containerClasses }}">
+        {% block beforeContent %}{% endblock %}
+        <main class="govuk-main-wrapper {{ mainClasses }}" id="main-content" role="main"{% if mainLang %} lang="{{ mainLang }}"{% endif %}>
+          {% block content %}{% endblock %}
+        </main>
+      </div>
+    </div>
+  </div>
+</div>
+</div>
+    
+
+
+  <div class="govuk-width-container">
+    <div class="body-block">
+    <div class="govuk-grid-row">
+      
+            <div class="govuk-grid-column-two-thirds">
+                <div class="govuk-grid-row">
+
+                  <div class="govuk-grid-column-one-half">
+                    <div class="card">
+                    <h2 class="govuk-heading-s">Manage an existing benefit, payment or claim</h2>
+                    <p class="govuk-body-s">
+                      Sign in to your account, report changes, find out about overpayments, or appeal a decision. Includes existing Universal Credit and tax credits claims.
+                    </p>
+                  </div>
+                  </div>
+                  <div class="govuk-grid-column-one-half">
+                    <div class="card">
+                    <h2 class="govuk-heading-s">Benefits and financial support if you're looking for work </h2>
+                    <p class="govuk-body-s">
+                      Help if you're looking for a new job, are out of work or affected by redundancy. Includes Universal Credit and Jobseeker’s Allowance (JSA).
+  </p>
+                    </div>
+                  </div>            
+</div>
+
+  <div class="govuk-grid-row">
+    <div class="govuk-grid-column-one-half">
+      <div class="card">
+      <h2 class="govuk-heading-s">Manage an existing benefit, payment or claim</h2>
+      <p class="govuk-body-s">
+        Sign in to your account, report changes, find out about overpayments, or appeal a decision. Includes existing Universal Credit and tax credits claims.
+      </p>
+    </div>
+    </div>
+    <div class="govuk-grid-column-one-half">
+      <div class="card">
+      <h2 class="govuk-heading-s">Benefits and financial support if you're looking for work </h2>
+      <p class="govuk-body-s">
+        Help if you're looking for a new job, are out of work or affected by redundancy. Includes Universal Credit and Jobseeker’s Allowance (JSA).
+</p>
+      </div>
+    </div>            
+</div>
+</div>
+
+<div class="govuk-grid-column-one-third">
+  <div class="financial-support-checklist">
+  <h2 class="govuk-heading-s">Financial support checklist</h2>
+  <p class="govuk-body">Find out what support you're entitled to</p>
+
+  <div class="govuk-accordion" data-module="govuk-accordion" id="accordion-default">
+    <div class="govuk-accordion__section">
+      <div class="govuk-accordion__section-header">
+        <h2 class="govuk-accordion__section-heading">
+          <span class="govuk-accordion__section-button" id="accordion-default-heading-1">
+            Writing well for the web
+          </span>
+        </h2>
+      </div>
+      <div id="accordion-default-content-1" class="govuk-accordion__section-content" aria-labelledby="accordion-default-heading-1">
+        <p class='govuk-body'>This is the content for Writing well for the web.</p>
+      </div>
+    </div>
+    <div class="govuk-accordion__section">
+      <div class="govuk-accordion__section-header">
+        <h2 class="govuk-accordion__section-heading">
+          <span class="govuk-accordion__section-button" id="accordion-default-heading-2">
+            Writing well for specialists
+          </span>
+        </h2>
+      </div>
+      <div id="accordion-default-content-2" class="govuk-accordion__section-content" aria-labelledby="accordion-default-heading-2">
+        <p class='govuk-body'>This is the content for Writing well for specialists.</p>
+      </div>
+    </div>
+    <div class="govuk-accordion__section">
+      <div class="govuk-accordion__section-header">
+        <h2 class="govuk-accordion__section-heading">
+          <span class="govuk-accordion__section-button" id="accordion-default-heading-3">
+            Know your audience
+          </span>
+        </h2>
+      </div>
+      <div id="accordion-default-content-3" class="govuk-accordion__section-content" aria-labelledby="accordion-default-heading-3">
+        <p class='govuk-body'>This is the content for Know your audience.</p>
+      </div>
+    </div>
+    <div class="govuk-accordion__section">
+      <div class="govuk-accordion__section-header">
+        <h2 class="govuk-accordion__section-heading">
+          <span class="govuk-accordion__section-button" id="accordion-default-heading-4">
+            How people read
+          </span>
+        </h2>
+      </div>
+      <div id="accordion-default-content-4" class="govuk-accordion__section-content" aria-labelledby="accordion-default-heading-4">
+        <p class='govuk-body'>This is the content for How people read.</p>
+      </div>
+    </div>
+  </div>
+</div>
+
+</div>
+            
+         
+
+          </div>
+        </div>
+        </div>
+
+  
+
+
+  </div>
+</div>
+{% endblock %}
+
