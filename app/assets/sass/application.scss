@@ -47,8 +47,8 @@
 .checklist-card {
     border-top: 2px solid #00703c;
     background:  #DCF6EA;
-    padding: 15px;
-    margin: 20px 0 20px 0;
+    padding: 10px;
+    margin: 15px 0 15px 0;
 }
 
 .checklist-card p {
@@ -57,4 +57,14 @@
 
 .page-list a, a:visited {
 color: black;
+}
+
+
+.rec-block {
+    background: govuk-colour("light-grey");
+    padding: 10px 10px 1px 10px;
+}
+
+.rec-title {
+    margin-top: 20px;
 }
