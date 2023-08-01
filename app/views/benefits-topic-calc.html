@@ -1,0 +1,190 @@
+{% extends "layouts/main.html" %}
+
+{% set pageName="Home" %}
+
+{% block main %}
+      <div class="big-header-block">
+        
+        <div class="govuk-width-container">
+    
+            <div class="govuk-grid-row">
+              <div class="govuk-grid-column-two-thirds">
+                <p class="govuk-body white-link"><a href="#">Home</a></p>
+                <h1 class="govuk-heading-xl">Benefits</h1>
+
+                <p class=""govuk-body-l">Includes eligibility, appeals, tax credits and Universal Credit
+                </p>
+            
+          </main>
+        </div>
+      </div>
+      
+    
+    </div>
+  </div>
+  <div class="eligibility-calc-block">
+        
+    <div class="govuk-width-container">
+
+        <div class="govuk-grid-row">
+          <div class="govuk-grid-column-two-thirds">
+            <h2 class="govuk-heading-m">Do you already get any of these benefits? </h1>
+                <p class="govuk-body">You're likely to be eligible for other benefits as well</p>
+
+                <div class="govuk-form-group">
+                    <fieldset class="govuk-fieldset" aria-describedby="countries-hint">
+                      <legend class="govuk-fieldset__legend govuk-fieldset__legend--l">
+                    
+                      </legend>
+                      <div id="countries-hint" class="govuk-hint">
+                      </div>
+                      <div class="govuk-checkboxes" data-module="govuk-checkboxes">
+                        <div class="govuk-checkboxes__item">
+                          <input class="govuk-checkboxes__input" id="countries" name="countries" type="checkbox" value="low-income">
+                          <label class="govuk-label govuk-checkboxes__label" for="countries">
+                            Universal Credit
+                          </label>
+                        </div>
+                        <div class="govuk-checkboxes__item">
+                          <input class="govuk-checkboxes__input" id="countries-2" name="countries" type="checkbox" value="unemployed">
+                          <label class="govuk-label govuk-checkboxes__label" for="countries-2">
+                            Income support
+                          </label>
+                        </div>
+                    </div>
+                    <div class="spacer-1">
+                        <a href="benefits-topic-local-results">
+                        <button class="govuk-button govuk-button--secondary" data-module="govuk-button">
+                            See what you could get
+                          </button>
+                        </div>
+      </main>
+    </div>
+  </div>
+  
+  <div class="govuk-width-container {{ containerClasses }}">
+    {% block beforeContent %}{% endblock %}
+    <main class="govuk-main-wrapper {{ mainClasses }}" id="main-content" role="main"{% if mainLang %} lang="{{ mainLang }}"{% endif %}>
+      {% block content %}{% endblock %}
+    </main>
+  </div>
+</div>
+</div>
+</div>
+</div>
+    
+
+
+  <div class="govuk-width-container">
+    <div class="body-block">
+    <div class="govuk-grid-row">
+            <div class="govuk-grid-column-full-width padding-top: govuk-spacing(30);">
+                <div class="govuk-grid-row">
+                  <div class="govuk-grid-column-one-third">
+                    <div class="card">
+                    <h2 class="govuk-heading-s"><a href="#">Manage an existing benefit, payment or claim</a></h2>
+                    <p class="govuk-body-s">
+                      Sign in to your account, report changes, find out about overpayments, or appeal a decision. Includes existing Universal Credit and tax credits claims.
+                    </p>
+                  </div>
+                  </div>
+                  <div class="govuk-grid-column-one-third">
+                    <div class="card">
+                    <h2 class="govuk-heading-s"><a href="#">Benefits and financial support if you're looking for work</a> </h2>
+                    <p class="govuk-body-s">
+                      Help if you're looking for a new job, are out of work or affected by redundancy. Includes Universal Credit and Jobseeker’s Allowance (JSA).
+                    </p>
+                    </div>
+                </div>
+                    <div class="govuk-grid-column-one-third">
+                        <div class="card">
+                        <h2 class="govuk-heading-s"><a href="#">Benefits and financial support if you're temporarily unable to work</a></h2>
+                        <p class="govuk-body-s">
+                          Help if you’re unable to work because you’re ill or self-isolating. Includes Universal Credit and Employment and Support Allowance (ESA).
+            
+                      </p>
+                      </div>
+                  </div>            
+                </div>
+             </div>
+    </div>            
+    <div class="govuk-grid-row">
+        <div class="govuk-grid-column-full-width padding-top: govuk-spacing(30);">
+            <div class="govuk-grid-row">
+              <div class="govuk-grid-column-one-third">
+                <div class="card">
+                <h2 class="govuk-heading-s"><a href="#">Manage an existing benefit, payment or claim</a></h2>
+                <p class="govuk-body-s">
+                  Sign in to your account, report changes, find out about overpayments, or appeal a decision. Includes existing Universal Credit and tax credits claims.
+                </p>
+              </div>
+              </div>
+              <div class="govuk-grid-column-one-third">
+                <div class="card">
+                <h2 class="govuk-heading-s"><a href="#">Benefits and financial support if you're looking for work</a> </h2>
+                <p class="govuk-body-s">
+                  Help if you're looking for a new job, are out of work or affected by redundancy. Includes Universal Credit and Jobseeker’s Allowance (JSA).
+                </p>
+                </div>
+            </div>
+                <div class="govuk-grid-column-one-third">
+                    <div class="card">
+                    <h2 class="govuk-heading-s"><a href="#">Benefits and financial support if you're temporarily unable to work</a></h2>
+                    <p class="govuk-body-s">
+                      Help if you’re unable to work because you’re ill or self-isolating. Includes Universal Credit and Employment and Support Allowance (ESA).
+        
+                  </p>
+                  </div>
+              </div>            
+            </div>
+         </div>
+</div>            
+<div class="govuk-grid-row">
+    <div class="govuk-grid-column-full-width padding-top: govuk-spacing(30);">
+        <div class="govuk-grid-row">
+          <div class="govuk-grid-column-one-third">
+            <div class="card">
+            <h2 class="govuk-heading-s"><a href="#">Manage an existing benefit, payment or claim</a></h2>
+            <p class="govuk-body-s">
+              Sign in to your account, report changes, find out about overpayments, or appeal a decision. Includes existing Universal Credit and tax credits claims.
+            </p>
+          </div>
+          </div>
+          <div class="govuk-grid-column-one-third">
+            <div class="card">
+            <h2 class="govuk-heading-s"><a href="#">Benefits and financial support if you're looking for work</a> </h2>
+            <p class="govuk-body-s">
+              Help if you're looking for a new job, are out of work or affected by redundancy. Includes Universal Credit and Jobseeker’s Allowance (JSA).
+            </p>
+            </div>
+        </div>
+            <div class="govuk-grid-column-one-third">
+                <div class="card">
+                <h2 class="govuk-heading-s"><a href="#">Benefits and financial support if you're temporarily unable to work</a></h2>
+                <p class="govuk-body-s">
+                  Help if you’re unable to work because you’re ill or self-isolating. Includes Universal Credit and Employment and Support Allowance (ESA).
+    
+              </p>
+              </div>
+          </div>            
+        </div>
+     </div>
+</div>            
+</div>
+</div>
+
+  
+            
+         
+
+          </div>
+        </div>
+        </div>
+
+  
+
+
+  </div>
+</div>
+{% endblock %}
+
