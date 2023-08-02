@@ -24,9 +24,7 @@
   </div>
 
   <div class="eligibility-calc-block">
-        
     <div class="govuk-width-container">
-
         <div class="govuk-grid-row">
           <div class="govuk-grid-column-full-width">
             <p class="govuk-body"><a href="#">Hide this</a></p>
@@ -34,10 +32,9 @@
             </div>
         </div>
 
-        <div class="govuk-grid-column-full-width;">
-            <div class="govuk-grid-row">
-              <div class="govuk-grid-column-one-third">
-                <div class="calc-card-1">
+        <div class="govuk-grid-row">
+        <div class="govuk-grid-column-full-width">
+              <div class="govuk-grid-column-one-third calc-card-1">
                 <h2 class="govuk-heading-s">Bus pass</h2>
                 <p class="govuk-body-s">
                 Info and <a href="#">link</a></p>
@@ -46,9 +43,7 @@
                     65% of users who claim Universal Credit also get this benefit
                 </p>
               </div>
-              </div>
-              <div class="govuk-grid-column-one-third">
-                <div class="calc-card-1">
+              <div class="govuk-grid-column-one-third calc-card-1">
                 <h2 class="govuk-heading-s">Help with health costs</h2>
                 <p class="govuk-body-s">
                     Info and <a href="#">link</a></p>
@@ -56,10 +51,8 @@
                     <p class="govuk-body-xs">
                         65% of users who claim Universal Credit also get this benefit
                     </p>
-                </div>
             </div>
-                <div class="govuk-grid-column-one-third">
-                    <div class="calc-card-1">
+                <div class="govuk-grid-column-one-third calc-card-1">
                     <h2 class="govuk-heading-s">Free dental treatment</a></h2>
                     <p class="govuk-body-s">
                         Info and <a href="#">link</a></p>
@@ -67,20 +60,14 @@
                         <p class="govuk-body-xs">
                             65% of users who claim Universal Credit also get this benefit
                         </p>
-                  </div>
               </div>            
             </div>
          </div>
         </div>
-      </main>
     </div>
   </div>
   
-  <div class="govuk-width-container {{ containerClasses }}">
-    {% block beforeContent %}{% endblock %}
-    <main class="govuk-main-wrapper {{ mainClasses }}" id="main-content" role="main"{% if mainLang %} lang="{{ mainLang }}"{% endif %}>
-      {% block content %}{% endblock %}
-    </main>
+ 
   </div>
 </div>
 </div>

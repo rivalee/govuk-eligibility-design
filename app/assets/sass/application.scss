@@ -88,8 +88,9 @@ color:  $govuk-link-colour;
 .eligibility-calc-block {
     background: #D5EBFF;
     width: full-width;
-    margin-top: -10px;
-    padding: 30px;
+    padding-top: 10px;
+    padding-bottom: 40px;
+
 }
 
 .govuk-checkboxes__label:before {
@@ -98,7 +99,8 @@ color:  $govuk-link-colour;
 
 .calc-card-1 {
     background: white;
-    padding: 20px 20px 20px 20px;
-    margin-left: -20px;
+    padding: 20px;
     border-top: 3px solid $govuk-brand-colour;
+    width: 32.2%;
+    margin-right: 10px;
 }
