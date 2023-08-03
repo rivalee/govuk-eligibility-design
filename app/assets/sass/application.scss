@@ -87,6 +87,10 @@ color:  $govuk-link-colour;
     margin-top: 20px;
 }
 
+.spacer-2 {
+    margin-top: 30px;
+}
+
 
 .eligibility-calc-block {
     background: #D5EBFF;
@@ -104,6 +108,12 @@ color:  $govuk-link-colour;
     background: white;
     padding: 20px;
     border-top: 3px solid #1d70b8;
+}
+
+.calc-card-2 {
+    background: white;
+    padding: 20px;
+    border-top: 3px solid $govuk-error-colour;
 }
 
 
