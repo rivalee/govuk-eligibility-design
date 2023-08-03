@@ -15,8 +15,11 @@
     padding: 30px;
 }
 
-.big-header-block h1, h2, p, a, a:visited {
+
+.big-header-block {
+  h1, h2, p, a, a:visited {
     color: white;
+  }
 }
 
 .main-body-content {
@@ -88,8 +91,8 @@ color:  $govuk-link-colour;
 .eligibility-calc-block {
     background: #D5EBFF;
     width: full-width;
-    padding-top: 10px;
-    padding-bottom: 40px;
+    padding-top: 20px;
+    padding-bottom: 20px;
 
 }
 
@@ -103,3 +106,7 @@ color:  $govuk-link-colour;
     border-top: 3px solid #1d70b8;
 }
 
+
+.share-link {
+    margin-top: 20px;
+}
