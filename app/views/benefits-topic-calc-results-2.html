@@ -1,0 +1,331 @@
+{% extends "layouts/main.html" %}
+
+{% set pageName="Home" %}
+
+{% block main %}
+      <div class="big-header-block">
+        
+        <div class="govuk-width-container">
+    
+            <div class="govuk-grid-row">
+              <div class="govuk-grid-column-two-thirds">
+                <p class="govuk-body white-link"><a href="benefits-topic-calc">Home</a></p>
+                <h1 class="govuk-heading-xl">Benefits</h1>
+
+                <p class=""govuk-body-l">Includes eligibility, appeals, tax credits and Universal Credit
+                </p>
+            
+          </main>
+        </div>
+      </div>
+      
+    
+    </div>
+  </div>
+
+  <div class="eligibility-calc-block">
+    <div class="govuk-width-container">
+        <div class="govuk-grid-row">
+          <div class="govuk-grid-column-full">
+            <p class="govuk-body-s"><a href="#">Hide this</a></p>
+            <h2 class="govuk-heading-s">You're likely to be entitled to other benefits</h1>
+            </div>
+        </div>
+
+        <div class="govuk-grid-row">
+        <div class="govuk-grid-column-full">
+          <div class="govuk-grid-row">
+          <div class="govuk-grid-column-one-third">
+            <div class="calc-card-1">
+            <h2 class="govuk-heading-s">Cold weather payments</h2>
+                <p class="govuk-body-s">
+                  You might be able to <a href="https://www.gov.uk/cold-weather-payment">get extra money in cold weather</a>. 
+              </p>
+
+                <p class="govuk-body-xs">
+                    65% of users who claim Universal Credit also get this benefit
+                </p>
+              </div>
+              </div>
+              <div class="govuk-grid-column-one-third">
+                <div class="calc-card-1">
+                <h2 class="govuk-heading-s">Help with health costs</h2>
+                <p class="govuk-body-s">
+                  You might be able to <a href="https://www.gov.uk/help-nhs-costs ">get help with other NHS costs</a>. 
+                  </p>
+    
+                    <p class="govuk-body-xs">
+                        65% of users who claim Universal Credit also get this benefit
+                    </p>
+            </div>
+          </div>
+                <div class="govuk-grid-column-one-third">
+                  <div class="calc-card-1">
+                    <h2 class="govuk-heading-s">Help with housing payments</a></h2>
+                    <p class="govuk-body-s">
+                      You might be able to <a href="https://www.gov.uk/housing-benefit/other-help-with-housing-costs ">
+                        get extra  for housing, heating and energy</a>.
+                      </p>
+        
+                        <p class="govuk-body-xs">
+                            65% of users who claim Universal Credit also get this benefit
+                        </p>
+              </div>    
+              
+            </div>
+       
+            </div>
+
+            <div class="govuk-grid-row">
+              <div class="govuk-grid-column-full spacer-2">
+                <h2 class="govuk-heading-s">Answer more questions to check your eligibility</h1>
+
+                    <div class="switch-content">
+                        <p class="govuk-body-s content-to-hide">
+                            <a class="addyourage" href="#addyourage">Add your age</a></p>
+                            <div class="content-to-show">
+                              <div class="govuk-form-group">
+                                <fieldset class="govuk-fieldset" role="group" aria-describedby="passport-issued-hint">
+                                  <legend class="govuk-fieldset__legend govuk-fieldset__legend--l">
+                                   <p class=“govuk-body”>What is your date of birth?</p>
+                                  </legend>
+                               
+                                  <div class="govuk-date-input" id="passport-issued">
+                                    <div class="govuk-date-input__item">
+                                      <div class="govuk-form-group">
+                                        <label class="govuk-label govuk-date-input__label" for="passport-issued-day">
+                                          Day
+                                        </label>
+                                        <input class="govuk-input govuk-date-input__input govuk-input--width-2" id="passport-issued-day" name="passport-issued-day" type="text" inputmode="numeric">
+                                      </div>
+                                    </div>
+                                    <div class="govuk-date-input__item">
+                                      <div class="govuk-form-group">
+                                        <label class="govuk-label govuk-date-input__label" for="passport-issued-month">
+                                          Month
+                                        </label>
+                                        <input class="govuk-input govuk-date-input__input govuk-input--width-2" id="passport-issued-month" name="passport-issued-month" type="text" inputmode="numeric">
+                                      </div>
+                                    </div>
+                                    <div class="govuk-date-input__item">
+                                      <div class="govuk-form-group">
+                                        <label class="govuk-label govuk-date-input__label" for="passport-issued-year">
+                                          Year
+                                        </label>
+                                        <input class="govuk-input govuk-date-input__input govuk-input--width-4" id="passport-issued-year" name="passport-issued-year" type="text" inputmode="numeric">
+                                      </div>
+                                    </div>
+                                  </div>
+                                 
+                                </fieldset>
+                                <div class="spacer-1">
+                                  <button class="govuk-button govuk-button--secondary" data-module="govuk-button">
+                                    Add
+                                  </button>
+                                </div>
+                              </div>
+                            </div>
+                            </div>
+
+                            <div class="switch-content">
+                                <p class="govuk-body-s">      
+                                  <p class="govuk-body-s content-to-hide">
+                                  <a class="addyourincome" href="#addyourincome">Add your income</a></p>
+                                  <div class="content-to-show">
+                                    <div class="govuk-form-group">
+                                      <fieldset class="govuk-fieldset" aria-describedby="contact-hint">
+                                        <legend class="govuk-fieldset__legend govuk-fieldset__legend--l">
+                                          <p class="govuk-body">
+                                            What is your income?
+                                          </p>
+                                        </legend>
+                                    
+                                        <div class="govuk-radios" data-module="govuk-radios">
+                                          <div class="govuk-radios__item">
+                                            <input class="govuk-radios__input" id="contact" name="contact" type="radio" value="email" data-aria-controls="conditional-contact">
+                                            <label class="govuk-label govuk-radios__label" for="contact">
+                                              Above £x
+                                            </label>
+                                          </div>
+                                          <div class="govuk-radios" data-module="govuk-radios">
+                                            <div class="govuk-radios__item">
+                                              <input class="govuk-radios__input" id="contact" name="contact" type="radio" value="email" data-aria-controls="conditional-contact">
+                                              <label class="govuk-label govuk-radios__label" for="contact">
+                                                Less than £x
+                                              </label>
+                                            </div>
+                                        </div>
+                                      </fieldset>
+                                      <div class="spacer-1">
+                                        <button class="govuk-button govuk-button--secondary" data-module="govuk-button">
+                                          Add
+                                        </button>
+                                      </div>
+                                    </div>
+                                  </div>
+                              </div>
+                </div>
+            </div>
+
+            <div class="govuk-grid-row">
+              <div class="govuk-grid-column-one-third">
+                <div class="calc-card-2">
+                  <div class="switch-content">
+                <h2 class="govuk-heading-s">Pension credit</h2>
+
+                    <p class="govuk-body-s">Pension Credit gives you <a href="https://www.gov.uk/pension-credit">extra money if you’re over State Pension age and on a low income</a>.</p>
+                      <p class="govuk-body-s">
+                    
+                    </div>
+                  </div>
+                  </div>
+                  
+                  <div class="govuk-grid-column-one-third">
+                    <div class="calc-card-2">
+                    <h2 class="govuk-heading-s">Housing benefit</h2>
+                    <p class="govuk-body-s">Housing Benefit can <a href="https://www.gov.uk/housing-benefit">help you pay your rent</a>.</p>
+                      
+                        
+                        </div>
+                     
+              </div>
+                    <div class="govuk-grid-column-one-third">
+                      <div class="calc-card-2">
+                        <h2 class="govuk-heading-s">Jobseeker's allowance</h2>
+                        <p class="govuk-body-s">Jobseeker's allowance gives you <a href="https://www.gov.uk/jobseekers-allowance">help when you're looking for work</a>.</p>
+
+                       
+                    </div>  
+                  
+                </div>
+           
+                </div>
+
+            <div class="share-link">
+            <p class="govuk-body-s"><a href="#">Share this to email</a></p>
+          </div>
+
+          </div>
+         </div>
+        </div>
+    </div>
+  </div>
+  
+ 
+  </div>
+</div>
+</div>
+</div>
+</div>
+    
+
+
+   <div class="govuk-width-container">
+    <div class="body-block">
+    <div class="govuk-grid-row">
+            <div class="govuk-grid-column-full padding-top: govuk-spacing(30);">
+                <div class="govuk-grid-row">
+                  <div class="govuk-grid-column-one-third">
+                    <div class="card">
+                    <h2 class="govuk-heading-s"><a href="#">Manage an existing benefit, payment or claim</a></h2>
+                    <p class="govuk-body-s">
+                      Sign in to your account, report changes, find out about overpayments, or appeal a decision. Includes existing Universal Credit and tax credits claims.
+                    </p>
+                  </div>
+                  </div>
+                  <div class="govuk-grid-column-one-third">
+                    <div class="card">
+                    <h2 class="govuk-heading-s"><a href="#">Benefits and financial support if you're looking for work</a> </h2>
+                    <p class="govuk-body-s">
+                      Help if you're looking for a new job, are out of work or affected by redundancy. Includes Universal Credit and Jobseeker’s Allowance (JSA).
+                    </p>
+                    </div>
+                </div>
+                    <div class="govuk-grid-column-one-third">
+                        <div class="card">
+                        <h2 class="govuk-heading-s"><a href="#">Benefits and financial support if you're temporarily unable to work</a></h2>
+                        <p class="govuk-body-s">
+                          Help if you’re unable to work because you’re ill or self-isolating. Includes Universal Credit and Employment and Support Allowance (ESA).
+            
+                      </p>
+                      </div>
+                  </div>            
+                </div>
+             </div>
+    </div>            
+    <div class="govuk-grid-row">
+        <div class="govuk-grid-column-full padding-top: govuk-spacing(30);">
+            <div class="govuk-grid-row">
+              <div class="govuk-grid-column-one-third">
+                <div class="card">
+                <h2 class="govuk-heading-s"><a href="#">Benefits and financial support for families</a></h2>
+                <p class="govuk-body-s">
+                    Help if you look after children or plan to have or adopt a child. Includes Child Benefit.</p>
+              </div>
+              </div>
+              <div class="govuk-grid-column-one-third">
+                <div class="card">
+                <h2 class="govuk-heading-s"><a href="#">Benefits and financial support if you're disabled or have a health condition</a> </h2>
+                <p class="govuk-body-s">
+                    Help if you're living with a health condition or disability. Includes Employment and Support Allowance (ESA).                </p>
+                </div>
+            </div>
+                <div class="govuk-grid-column-one-third">
+                    <div class="card">
+                    <h2 class="govuk-heading-s"><a href="#">Benefits and financial support if you're caring for someone</a></h2>
+                    <p class="govuk-body-s">
+                        Help if you regularly spend time caring for someone. Includes Universal Credit.
+                  </p>
+                  </div>
+              </div>            
+            </div>
+         </div>
+</div>            
+<div class="govuk-grid-row">
+    <div class="govuk-grid-column-full padding-top: govuk-spacing(30);">
+        <div class="govuk-grid-row">
+          <div class="govuk-grid-column-one-third">
+            <div class="card">
+            <h2 class="govuk-heading-s"><a href="#">Benefits and financial support if you're on a low income</a></h2>
+            <p class="govuk-body-s">
+                Help with heating, housing and other living costs. Includes Universal Credit.
+            </p>
+          </div>
+          </div>
+          <div class="govuk-grid-column-one-third">
+            <div class="card">
+            <h2 class="govuk-heading-s"><a href="#">Benefits and financial support when someone dies</a> </h2>
+            <p class="govuk-body-s">
+                Help if you’re unable to work because you’re ill or self-isolating. Includes Universal Credit and Employment and Support Allowance (ESA).
+            </p>
+            </div>
+        </div>
+            <div class="govuk-grid-column-one-third">
+              <p>&nbsp;
+              </p>
+              </div>
+          </div>            
+        </div>
+     </div>
+</div>            
+</div>
+
+  
+            
+         
+
+          </div>
+        </div>
+        </div>
+
+  
+
+
+  </div>
+</div>
+
+{% block pageScripts %}
+  <script src="/public/javascripts/application.js"></script>
+{% endblock %}
+{% endblock %}
+
