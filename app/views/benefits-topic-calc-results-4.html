@@ -82,12 +82,12 @@
 
                     <div class="switch-content">
                         <p class="govuk-body-s content-to-hide">
-                            <a class="addyourage" href="#addyourage">Add your age</a></p>
-                            <div class="content-to-show spacer-2">
-                              <div class="govuk-form-group">
+                            <a class="addyourage" href="#addyourage">Add your date of birth, housing and work situation</a></p>
+                            <div class="content-to-show">
+                              <div class="govuk-form-group spacer-2">
                                 <fieldset class="govuk-fieldset" role="group" aria-describedby="passport-issued-hint">
                                   <legend class="govuk-fieldset__legend">
-                                   <p class="govuk-heading-s">1. What is your date of birth?</h2>
+                                   <p class="govuk-body-m">What is your date of birth?</p>
                                   </legend>
                                
                                   <div class="govuk-date-input" id="passport-issued">
@@ -118,86 +118,67 @@
                                   </div>
                                  
                                 </fieldset>
-                                <div class="spacer-1">
-                                  <button class="govuk-button govuk-button--secondary" data-module="govuk-button">
-                                    Add
-                                  </button>
+                                <div class="govuk-form-group spacer-2">
+                                    <fieldset class="govuk-fieldset" aria-describedby="contact-hint">
+                                      <legend class="govuk-fieldset__legend">
+                                          <p class="govuk-body-m">Are you in temporary, sheltered or supported housing?</p>
+                                         </legend>
+                                  
+                                      <div class="govuk-radios" data-module="govuk-radios">
+                                        <div class="govuk-radios__item">
+                                          <input class="govuk-radios__input" id="contact" name="contact" type="radio" value="email" data-aria-controls="conditional-contact">
+                                          <label class="govuk-label govuk-radios__label" for="contact">
+                                            Yes
+                                          </label>
+                                        </div>
+                                        <div class="govuk-radios" data-module="govuk-radios">
+                                          <div class="govuk-radios__item">
+                                            <input class="govuk-radios__input" id="contact" name="contact" type="radio" value="email" data-aria-controls="conditional-contact">
+                                            <label class="govuk-label govuk-radios__label" for="contact">
+                                              No
+                                            </label>
+                                          </div>
+                                      </div>
+                                    </fieldset>
+                                    <div class="govuk-form-group spacer-2">
+                                        <fieldset class="govuk-fieldset" aria-describedby="contact-hint">
+                                          <legend class="govuk-fieldset__legend">
+                                              <p class="govuk-body-m">Are you looking for work?</p>
+                                             </legend>
+                                      
+                                          <div class="govuk-radios" data-module="govuk-radios">
+                                            <div class="govuk-radios__item">
+                                              <input class="govuk-radios__input" id="contact" name="contact" type="radio" value="email" data-aria-controls="conditional-contact">
+                                              <label class="govuk-label govuk-radios__label" for="contact">
+                                                Yes
+                                              </label>
+                                            </div>
+                                            <div class="govuk-radios" data-module="govuk-radios">
+                                              <div class="govuk-radios__item">
+                                                <input class="govuk-radios__input" id="contact" name="contact" type="radio" value="email" data-aria-controls="conditional-contact">
+                                                <label class="govuk-label govuk-radios__label" for="contact">
+                                                  No
+                                                </label>
+                                              </div>
+                                          </div>
+                                        </fieldset>
+                                        <div class="spacer-1">
+                                          <button class="govuk-button govuk-button--secondary" data-module="govuk-button">
+                                            Add and update
+                                          </button>
+                                        </div>
+                                     
+
+
+                                    </div>
+                                  </div>
                                 </div>
                               </div>
                             </div>
-                            </div>
+                           
 
-                            <div class="switch-content">
-                                <p class="govuk-body-s">      
-                                  <p class="govuk-body-s content-to-hide spacer-2">
-                                  <a class="addyourhousing" href="#addyourhousing">Add your housing situation</a></p>
-                                  <div class="content-to-show">
-                                    <div class="govuk-form-group">
-                                      <fieldset class="govuk-fieldset" aria-describedby="contact-hint">
-                                        <legend class="govuk-fieldset__legend">
-                                            <p class="govuk-heading-s">2. Are you in temporary, sheltered or supported housing?</h2>
-                                           </legend>
-                                    
-                                        <div class="govuk-radios" data-module="govuk-radios">
-                                          <div class="govuk-radios__item">
-                                            <input class="govuk-radios__input" id="contact" name="contact" type="radio" value="email" data-aria-controls="conditional-contact">
-                                            <label class="govuk-label govuk-radios__label" for="contact">
-                                              Yes
-                                            </label>
-                                          </div>
-                                          <div class="govuk-radios" data-module="govuk-radios">
-                                            <div class="govuk-radios__item">
-                                              <input class="govuk-radios__input" id="contact" name="contact" type="radio" value="email" data-aria-controls="conditional-contact">
-                                              <label class="govuk-label govuk-radios__label" for="contact">
-                                                No
-                                              </label>
-                                            </div>
-                                        </div>
-                                      </fieldset>
-                                      <div class="spacer-1">
-                                        <button class="govuk-button govuk-button--secondary" data-module="govuk-button">
-                                          Add
-                                        </button>
-                                      </div>
-                                    </div>
-                                  </div>
-                              </div>
+                          
 
-                              <div class="switch-content">
-                                <p class="govuk-body-s">      
-                                  <p class="govuk-body-s content-to-hide spacer-2">
-                                  <a class="addyourwork" href="#addyourwork">Add your work situation</a></p>
-                                  <div class="content-to-show">
-                                    <div class="govuk-form-group">
-                                      <fieldset class="govuk-fieldset" aria-describedby="contact-hint">
-                                        <legend class="govuk-fieldset__legend">
-                                            <p class="govuk-heading-s">3. Are you looking for work?</h2>
-                                           </legend>
-                                    
-                                        <div class="govuk-radios" data-module="govuk-radios">
-                                          <div class="govuk-radios__item">
-                                            <input class="govuk-radios__input" id="contact" name="contact" type="radio" value="email" data-aria-controls="conditional-contact">
-                                            <label class="govuk-label govuk-radios__label" for="contact">
-                                              Yes
-                                            </label>
-                                          </div>
-                                          <div class="govuk-radios" data-module="govuk-radios">
-                                            <div class="govuk-radios__item">
-                                              <input class="govuk-radios__input" id="contact" name="contact" type="radio" value="email" data-aria-controls="conditional-contact">
-                                              <label class="govuk-label govuk-radios__label" for="contact">
-                                                No
-                                              </label>
-                                            </div>
-                                        </div>
-                                      </fieldset>
-                                      <div class="spacer-1">
-                                        <button class="govuk-button govuk-button--secondary" data-module="govuk-button">
-                                          Add
-                                        </button>
-                                      </div>
-                                    </div>
-                                  </div>
-                              </div>
                 </div>
             </div>
 
