@@ -1,0 +1,91 @@
+{% extends "layouts/main.html" %}
+
+{% set pageName="Home" %}
+
+{% block content %}
+
+<div class="govuk-grid-row">
+  <div class="govuk-grid-column-full-width">
+
+   
+    <p class="govuk-body"><a href="v2-statements">Back</a></p>
+    <h1 class="govuk-heading-xl">
+    Find financial support</h1>
+
+
+    <!-- 
+    <div class="govuk-form-group">
+        <label class="govuk-label" for="width-5">
+        </label>
+        <input class="govuk-input govuk-input--width-5" id="width-5" name="width5" type="text" value="gov.uk/financial-support...">
+      </div>
+      -->
+    
+
+
+      <div class="page-actions-1">  
+      <p class="govuk-body"> <a href="#">Log in to save this to your GOV.UK Account</a></p>
+       <p class="govuk-body"><a href="#">Share this to email</a></p>
+       <button class="govuk-button govuk-button--secondary" data-module="govuk-button">
+        Copy link to this page
+      </button>
+    </div>
+
+       <div class="outcomes-section">
+
+        <h2 class="govuk-heading-m">
+            You may be eligible for support</h2>
+
+            <p class="govuk-body">You said you have a child, are unemployed, and are a carer</p>
+            <p><a href="v2-statements">Change your answers</a> </p>
+
+            <h2 class="govuk-heading-s">
+                Because you said you have a child</h2>
+
+    
+            <div class="govuk-grid-row">
+            <div class="govuk-grid-column-full">
+              <div class="govuk-grid-row">
+              <div class="govuk-grid-column-one-third">
+                <div class="calc-card-v2">
+                <h2 class="govuk-heading-s">Cold weather payments</h2>
+                    <p class="govuk-body-s">
+                      You might be able to <a href="https://www.gov.uk/cold-weather-payment">get extra money in cold weather</a>. 
+                  </p>
+    
+                
+                  </div>
+                  </div>
+                  <div class="govuk-grid-column-one-third">
+                    <div class="calc-card-v2">
+                    <h2 class="govuk-heading-s">Help with health costs</h2>
+                    <p class="govuk-body-s">
+                      You might be able to <a href="https://www.gov.uk/help-nhs-costs ">get help with other NHS costs</a>. 
+                      </p>
+        
+                        
+                </div>
+              </div>
+                    <div class="govuk-grid-column-one-third">
+                      <div class="calc-card-v2">
+                        <h2 class="govuk-heading-s">Help with housing payments</a></h2>
+                        <p class="govuk-body-s">
+                          You might be able to <a href="https://www.gov.uk/housing-benefit/other-help-with-housing-costs ">
+                            get extra  for housing, heating and energy</a>.
+                          </p>
+            
+                          
+                  </div>  
+                </div>
+            </div>
+
+
+                  
+
+
+
+
+  </div>
+</div>
+
+{% endblock %}

@@ -103,9 +103,14 @@ color:  $govuk-link-colour;
     width: full-width;
     padding-top: 20px;
     padding-bottom: 20px;
-
 }
 
+.eligibility-calc-block-2 {
+    background: #D5EBFF;
+    width: full-width;
+    padding-top: 20px;
+    padding-bottom: 5px;
+}
 .govuk-checkboxes__label:before {
     background: #fff;
 }
@@ -135,4 +140,22 @@ color:  $govuk-link-colour;
 
 .content-to-show {
     display: none;
+}
+
+.outcomes-section {
+    background-color: #D5EBFF;
+    padding: 20px;
+}
+
+.calc-card-v2 {
+    background: #fff;
+    padding: 20px;
+    border-top: 3px solid #1d70b8;
+    margin-bottom: 10px;
+    height: 150px;
+}
+
+.page-actions-1 {
+    margin-top: 20px;
+    margin-bottom: 30px;
 }
