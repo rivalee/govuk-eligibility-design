@@ -148,7 +148,7 @@ color:  $govuk-link-colour;
 }
 
 .calc-card-v2 {
-    background: #fff;
+    background: govuk-colour("light-grey");
     padding: 20px;
     border-top: 3px solid #1d70b8;
     margin-bottom: 10px;
@@ -159,3 +159,17 @@ color:  $govuk-link-colour;
     margin-top: 20px;
     margin-bottom: 30px;
 }
+
+.section-chunk {
+    margin-bottom: 50px;
+}
+.add-thing {
+    background-color: govuk-colour("light-grey");
+    margin-top: 10px;
+    margin-bottom: 10px;
+    margin-right: 10px;
+    padding: 14px 14px 0px 14px;
+    display: inline-block;
+    border-radius: 7px;
+}
+
