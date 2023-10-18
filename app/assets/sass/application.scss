@@ -126,12 +126,6 @@ color:  $govuk-link-colour;
     margin-bottom: 10px;
 }
 
-.calc-card-2 {
-    background: white;
-    padding: 20px;
-    border-top: 3px solid $govuk-error-colour;
-    margin-bottom: 10px;
-}
 
 
 .share-link {
@@ -147,13 +141,6 @@ color:  $govuk-link-colour;
     padding: 20px;
 }
 
-.calc-card-v2 {
-    background: govuk-colour("light-grey");
-    padding: 20px;
-    border-top: 3px solid #1d70b8;
-    margin-bottom: 10px;
-    height: 150px;
-}
 
 .page-actions-1 {
     margin-top: 20px;
@@ -161,18 +148,29 @@ color:  $govuk-link-colour;
 }
 
 .section-chunk {
+    background:  govuk-colour("light-grey");
+    display: inline-block;
+    width: 50%;
+    padding: 30px 30px 0px 30px;
     margin-bottom: 50px;
 }
+
+
+
 .add-thing {
-    background-color: govuk-colour("light-grey");
     margin-top: 10px;
-    margin-bottom: 10px;
-    margin-right: 10px;
-    padding: 14px 14px 0px 14px;
-    display: inline-block;
-    border-radius: 7px;
 }
 
-.add-criteria {
-    margin-bottom: 20px;
+.calc-card-v3 {
+    border-top: 2px solid #1d70b8;
+    background: #e5f4ff;
+    padding: 20px;
+    margin-bottom: 30px;
+    height: 200px;
+}
+.calc-card-2 {
+    border-top: 2px solid $govuk-error-colour;
+    background: white;
+    padding: 20px;
+    margin-bottom: 30px;
 }
