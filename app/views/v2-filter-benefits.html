@@ -14,75 +14,163 @@
 
 
         <div class="section-chunk">
-        <h2 class="govuk-heading-s">
-            Your situation</h2>
-            <ul class="govuk-list govuk-list--bullet">
-                <li class="govuk-body-s">You're a carer</li>
-                <li class="govuk-body-s">You're state pension age</li>
-                </ul>
-            <p class="govuk-body-s"><a href="v2-statements">Change</a></p>
+            <div class="govuk-grid-row">
+                <div class="govuk-grid-column-one-half">
+                    <h2 class="govuk-heading-m">
+                        Add your information</h2>
+        
+                        
+                        <div class="add-criteria">
+                            <fieldset class="govuk-fieldset" role="group" aria-describedby="passport-issued-hint">
+                                <legend class="govuk-fieldset__legend">
+                                 <p class="govuk-body-m">What is your date of birth?</p>
+                                </legend>
+                             
+                                <div class="govuk-date-input" id="passport-issued">
+                                  <div class="govuk-date-input__item">
+                                    <div class="govuk-form-group">
+                                      <label class="govuk-label govuk-date-input__label" for="passport-issued-day">
+                                        Day
+                                      </label>
+                                      <input class="govuk-input govuk-date-input__input govuk-input--width-2" id="passport-issued-day" name="passport-issued-day" type="text" inputmode="numeric">
+                                    </div>
+                                  </div>
+                                  <div class="govuk-date-input__item">
+                                    <div class="govuk-form-group">
+                                      <label class="govuk-label govuk-date-input__label" for="passport-issued-month">
+                                        Month
+                                      </label>
+                                      <input class="govuk-input govuk-date-input__input govuk-input--width-2" id="passport-issued-month" name="passport-issued-month" type="text" inputmode="numeric">
+                                    </div>
+                                  </div>
+                                  <div class="govuk-date-input__item">
+                                    <div class="govuk-form-group">
+                                      <label class="govuk-label govuk-date-input__label" for="passport-issued-year">
+                                        Year
+                                      </label>
+                                      <input class="govuk-input govuk-date-input__input govuk-input--width-4" id="passport-issued-year" name="passport-issued-year" type="text" inputmode="numeric">
+                                    </div>
+                                  </div>
+                                </div>
+                               
+                              </fieldset>
+                              <div class="govuk-form-group spacer-2">
+                                <fieldset class="govuk-fieldset" aria-describedby="contact-hint">
+                                  <legend class="govuk-fieldset__legend">
+                                      <p class="govuk-body-m">Are you in temporary, sheltered or supported housing?</p>
+                                     </legend>
+                              
+                                  <div class="govuk-radios" data-module="govuk-radios">
+                                    <div class="govuk-radios__item">
+                                      <input class="govuk-radios__input" id="contact" name="contact" type="radio" value="email" data-aria-controls="conditional-contact">
+                                      <label class="govuk-label govuk-radios__label" for="contact">
+                                        Yes
+                                      </label>
+                                    </div>
+                                    <div class="govuk-radios" data-module="govuk-radios">
+                                      <div class="govuk-radios__item">
+                                        <input class="govuk-radios__input" id="contact" name="contact" type="radio" value="email" data-aria-controls="conditional-contact">
+                                        <label class="govuk-label govuk-radios__label" for="contact">
+                                          No
+                                        </label>
+                                      </div>
+                                  </div>
+                                </fieldset>
+                                <div class="govuk-form-group spacer-2">
+                                    <fieldset class="govuk-fieldset" aria-describedby="contact-hint">
+                                      <legend class="govuk-fieldset__legend">
+                                          <p class="govuk-body-m">Are you looking for work?</p>
+                                         </legend>
+                                  
+                                      <div class="govuk-radios" data-module="govuk-radios">
+                                        <div class="govuk-radios__item">
+                                          <input class="govuk-radios__input" id="contact" name="contact" type="radio" value="email" data-aria-controls="conditional-contact">
+                                          <label class="govuk-label govuk-radios__label" for="contact">
+                                            Yes
+                                          </label>
+                                        </div>
+                                        <div class="govuk-radios" data-module="govuk-radios">
+                                          <div class="govuk-radios__item">
+                                            <input class="govuk-radios__input" id="contact" name="contact" type="radio" value="email" data-aria-controls="conditional-contact">
+                                            <label class="govuk-label govuk-radios__label" for="contact">
+                                              No
+                                            </label>
+                                          </div>
+                                      </div>
+                                    </fieldset>
 
-            <h2 class="govuk-heading-s">
-                Add your information</h2>
+                                      </div>
+              </div>
 
-                <!--
-                <div class="add-criteria">
-                    <fieldset class="govuk-fieldset" role="group" aria-describedby="passport-issued-hint">
-                        <legend class="govuk-fieldset__legend">
-                         <p class="govuk-body-m">What is your date of birth?</p>
-                        </legend>
-                     
-                        <div class="govuk-date-input" id="passport-issued">
-                          <div class="govuk-date-input__item">
-                            <div class="govuk-form-group">
-                              <label class="govuk-label govuk-date-input__label" for="passport-issued-day">
-                                Day
-                              </label>
-                              <input class="govuk-input govuk-date-input__input govuk-input--width-2" id="passport-issued-day" name="passport-issued-day" type="text" inputmode="numeric">
-                            </div>
-                          </div>
-                          <div class="govuk-date-input__item">
-                            <div class="govuk-form-group">
-                              <label class="govuk-label govuk-date-input__label" for="passport-issued-month">
-                                Month
-                              </label>
-                              <input class="govuk-input govuk-date-input__input govuk-input--width-2" id="passport-issued-month" name="passport-issued-month" type="text" inputmode="numeric">
-                            </div>
-                          </div>
-                          <div class="govuk-date-input__item">
-                            <div class="govuk-form-group">
-                              <label class="govuk-label govuk-date-input__label" for="passport-issued-year">
-                                Year
-                              </label>
-                              <input class="govuk-input govuk-date-input__input govuk-input--width-4" id="passport-issued-year" name="passport-issued-year" type="text" inputmode="numeric">
-                            </div>
-                          </div>
-                        </div>
-                       
-                      </fieldset>
-                   -->
-                   
-                   <div class="add-thing">
-                    <p class="govuk-body-s"><a href="#">Add your date of birth</a></p>
-                    </div>
 
-                   <div class="add-thing">
-                    <p class="govuk-body-s"><a href="#">Add your work situation</a></p>
-                    </div>
+      
 
-                    <div class="add-thing">
-                    <p class="govuk-body-s"><a href="#">Add your housing situation</a></p>
-                    </div>
-
-                    <div class="add-thing">
-                    <p class="govuk-body-s"><a href="#">Add your income</a></p>
-                </div>
+           
                 
                 <button class="govuk-button" data-module="govuk-button">
                     Update results
                    </button>
                 </div>
 
+                </div>
+
+                <div class="govuk-grid-column-one-half">
+                    <h2 class="govuk-heading-m">
+                        Your situation</h2>
+                        <p class="govuk-body">Select all statements that apply</p>
+
+                      <div class="govuk-checkboxes__item">
+                        <input class="govuk-checkboxes__input" id="countries" name="countries" type="checkbox" value="low-income">
+                        <label class="govuk-label govuk-checkboxes__label" for="countries">
+                          I’m on a low income
+                        </label>
+                      </div>
+                      <div class="govuk-checkboxes__item">
+                        <input class="govuk-checkboxes__input" id="countries-2" name="countries" type="checkbox" value="unemployed">
+                        <label class="govuk-label govuk-checkboxes__label" for="countries-2">
+                          I’m unemployed
+                        </label>
+                      </div>
+                      <div class="govuk-checkboxes__item">
+                        <input class="govuk-checkboxes__input" id="countries-3" name="countries" type="checkbox" value="pension-age" checked>
+                        <label class="govuk-label govuk-checkboxes__label" for="countries-3">
+                          I’m state pension age
+                        </label>
+                      </div>
+                    
+                        <div class="govuk-checkboxes__item">
+                          <input class="govuk-checkboxes__input" id="countries-5" name="countries" type="checkbox" value="having-baby">
+                          <label class="govuk-label govuk-checkboxes__label" for="countries-5">
+                            I’m having a baby
+                          </label>
+                        </div>
+
+                        <div class="govuk-checkboxes__item">
+                            <input class="govuk-checkboxes__input" id="countries-6" name="countries" type="checkbox" value="have-child">
+                            <label class="govuk-label govuk-checkboxes__label" for="countries-6">
+                              I have a child
+                            </label>
+                          </div>
+                          <div class="govuk-checkboxes__item">
+                            <input class="govuk-checkboxes__input" id="countries-7" name="countries" type="checkbox" value="carer" checked>
+                            <label class="govuk-label govuk-checkboxes__label" for="countries-7">
+                              I’m a carer
+                            </label>
+                          </div>
+                          <div class="govuk-checkboxes__item">
+                            <input class="govuk-checkboxes__input" id="countries-8" name="countries" type="checkbox" value="support-for-death">
+                            <label class="govuk-label govuk-checkboxes__label" for="countries-8">
+                              I need support because someone has died
+                            </label>
+                          </div>
+                          <div class="govuk-checkboxes__item">
+                            <input class="govuk-checkboxes__input" id="countries-9" name="countries" type="checkbox" value="support-for-disability">
+                            <label class="govuk-label govuk-checkboxes__label" for="countries-9">
+                                Myself or my child have a disability or a long-term health condition
+                            </label>
+                          </div>            
+                     </div>
+                    </div>
                 </div>
 
               
@@ -94,10 +182,10 @@
               <div class="govuk-grid-row">
               <div class="govuk-grid-column-one-half">
                 <div class="calc-card-v3">
-                <h2 class="govuk-heading-s">Pension credit</h2>
-                    <p class="govuk-body-s">
+                <h2 class="govuk-heading-m">Pension credit</h2>
+                    <p class="govuk-body-m">
                       Some text</p>
-                  <a href="#">A link</a>
+               <p>  <a href="#">A link</a></p> 
     
                 </div>
             </div>
@@ -105,10 +193,9 @@
                                     <div class="govuk-grid-column-one-half">
                     <div class="calc-card-v3">
                         <h2 class="govuk-heading-s">Carer's allowance</h2>
-                        <p class="govuk-body-s">
-                          Some text</p>
-                      <a href="#">A link</a>
-        
+                        <p class="govuk-body-m">
+                            Some text</p>
+                     <p>  <a href="#">A link</a></p> 
                         
                 </div>
               </div>
@@ -121,9 +208,9 @@
       <div class="govuk-grid-column-one-half">
         <div class="calc-card-v3">
         <h2 class="govuk-heading-s">Council tax reduction</h2>
-            <p class="govuk-body-s">
-              Some text</p>
-          <a href="#">A link</a>
+        <p class="govuk-body-m">
+            Some text</p>
+     <p>  <a href="#">A link</a></p> 
 
         </div>
     </div>
@@ -131,9 +218,9 @@
                             <div class="govuk-grid-column-one-half">
             <div class="calc-card-v3">
             <h2 class="govuk-heading-s">Discounted TV allowance</h2>
-            <p class="govuk-body-s">
-              You might be able to <a href="https://www.gov.uk/help-nhs-costs ">get help with other NHS costs</a>. 
-              </p>
+            <p class="govuk-body-m">
+                Some text</p>
+         <p>  <a href="#">A link</a></p> 
 
                 
         </div>
@@ -141,5 +228,7 @@
 </div>
 </div>
 </div>
+
+
 
 {% endblock %}
