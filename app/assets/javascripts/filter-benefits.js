@@ -52,6 +52,6 @@ window.GOVUKPrototypeKit.documentReady(() => {
     updateBenefitsPreferencesUI()
   })
 
-  benefitsPreferences.hidden = true
+  benefitsForm.hidden = true
   updateBenefitsPreferencesUI()
 })
