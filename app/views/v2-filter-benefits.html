@@ -3,20 +3,113 @@
 {% set pageName="Home" %}
 
 {% block main %}
-
+<main class="govuk-main-wrapper" id="main-content" role="main">
 <div class="govuk-width-container">
 <div class="govuk-grid-row">
   <div class="govuk-grid-column-full-width">
     <h1 class="govuk-heading-xl">
     Find financial support</h1>
 
+            <div class="govuk-grid-row">
+     <div class="govuk-grid-column-two-thirds">
+    <h2 class="govuk-heading-m">
+        Your situation</h2>
+    </div>
+         <div class="govuk-grid-column-one-third change-link">
+          <p><a href="#">Change</a></p>
+         </div>
+        </div>
 
+    <div class="section-chunk">
+      
+      <div class="your-situation-saved-mode">
+        <div class="govuk-grid-row">
+     <div class="govuk-grid-column-full-width">
 
+            <dl class="govuk-summary-list govuk-!-margin-bottom-9">
+          <div class="govuk-summary-list__row">
+          <dd class="govuk-summary-list__value">
+                I look after someone
+            </dt>
+          </div>
+          <div class="govuk-summary-list__row">
+          <dd class="govuk-summary-list__value">
+                I'm state pension age
+            </dt>
+          </div>
+        </dl>
+       
+     </div>
+   </div>
+  </div>
+
+            
+
+        <div class="your-situation-edit-mode">
+             <p class="govuk-body">Select all statements that apply</p>
+
+          <div class="govuk-checkboxes__item">
+            <input class="govuk-checkboxes__input" id="countries" name="countries" type="checkbox" value="low-income">
+            <label class="govuk-label govuk-checkboxes__label" for="countries">
+              I’m on a low income
+            </label>
+          </div>
+          <div class="govuk-checkboxes__item">
+            <input class="govuk-checkboxes__input" id="countries-2" name="countries" type="checkbox" value="unemployed">
+            <label class="govuk-label govuk-checkboxes__label" for="countries-2">
+              I’m unemployed
+            </label>
+          </div>
+          <div class="govuk-checkboxes__item">
+            <input class="govuk-checkboxes__input" id="countries-3" name="countries" type="checkbox" value="pension-age" checked>
+            <label class="govuk-label govuk-checkboxes__label" for="countries-3">
+              I’m state pension age
+            </label>
+          </div>
+        
+            <div class="govuk-checkboxes__item">
+              <input class="govuk-checkboxes__input" id="countries-5" name="countries" type="checkbox" value="having-baby">
+              <label class="govuk-label govuk-checkboxes__label" for="countries-5">
+                I’m having a baby
+              </label>
+            </div>
+
+            <div class="govuk-checkboxes__item">
+                <input class="govuk-checkboxes__input" id="countries-6" name="countries" type="checkbox" value="have-child">
+                <label class="govuk-label govuk-checkboxes__label" for="countries-6">
+                  I have a child
+                </label>
+              </div>
+              <div class="govuk-checkboxes__item">
+                <input class="govuk-checkboxes__input" id="countries-7" name="countries" type="checkbox" value="carer" checked>
+                <label class="govuk-label govuk-checkboxes__label" for="countries-7">
+                  I look after someone
+                </label>
+              </div>
+              <div class="govuk-checkboxes__item">
+                <input class="govuk-checkboxes__input" id="countries-8" name="countries" type="checkbox" value="support-for-death">
+                <label class="govuk-label govuk-checkboxes__label" for="countries-8">
+                  I need support because someone has died
+                </label>
+              </div>
+              <div class="govuk-checkboxes__item">
+                <input class="govuk-checkboxes__input" id="countries-9" name="countries" type="checkbox" value="support-for-disability">
+                <label class="govuk-label govuk-checkboxes__label" for="countries-9">
+                    Myself or my child have a disability or a long-term health condition
+                </label>
+              </div>
+            </div>
+          </div>
+            
+        
+    
+
+    <h2 class="govuk-heading-m">
+        Add your information</h2>
         <div class="section-chunk">
             <div class="govuk-grid-row">
-                <div class="govuk-grid-column-one-half">
-                    <h2 class="govuk-heading-m">
-                        Add your information</h2>
+                <div class="govuk-grid-column-two-thirds">
+                 
         
                         
                         <div class="add-criteria">
@@ -51,9 +144,9 @@
                                     </div>
                                   </div>
                                 </div>
-                               
                               </fieldset>
-                              <div class="govuk-form-group spacer-2">
+
+                              <div class="govuk-form-group">
                                 <fieldset class="govuk-fieldset" aria-describedby="contact-hint">
                                   <legend class="govuk-fieldset__legend">
                                       <p class="govuk-body-m">Are you in temporary, sheltered or supported housing?</p>
@@ -61,19 +154,20 @@
                               
                                   <div class="govuk-radios" data-module="govuk-radios">
                                     <div class="govuk-radios__item">
-                                      <input class="govuk-radios__input" id="contact" name="contact" type="radio" value="email" data-aria-controls="conditional-contact">
-                                      <label class="govuk-label govuk-radios__label" for="contact">
+                                      <input class="govuk-radios__input" id="housing" name="housing" type="radio" value="housing" data-aria-controls="conditional-contact">
+                                      <label class="govuk-label govuk-radios__label" for="housing">
                                         Yes
                                       </label>
                                     </div>
                                     <div class="govuk-radios" data-module="govuk-radios">
                                       <div class="govuk-radios__item">
-                                        <input class="govuk-radios__input" id="contact" name="contact" type="radio" value="email" data-aria-controls="conditional-contact">
-                                        <label class="govuk-label govuk-radios__label" for="contact">
+                                        <input class="govuk-radios__input" id="housing" name="housing" type="radio" value="email" data-aria-controls="conditional-contact">
+                                        <label class="govuk-label govuk-radios__label" for="housing">
                                           No
                                         </label>
                                       </div>
                                   </div>
+                                </div>
                                 </fieldset>
                                 <div class="govuk-form-group spacer-2">
                                     <fieldset class="govuk-fieldset" aria-describedby="contact-hint">
@@ -97,79 +191,19 @@
                                           </div>
                                       </div>
                                     </fieldset>
-
-                                      </div>
-              </div>
-
-
-      
-
-           
-                
-                <button class="govuk-button" data-module="govuk-button">
-                    Update results
-                   </button>
-                </div>
-
-                </div>
-
-                <div class="govuk-grid-column-one-half">
-                    <h2 class="govuk-heading-m">
-                        Your situation</h2>
-                        <p class="govuk-body">Select all statements that apply</p>
-
-                      <div class="govuk-checkboxes__item">
-                        <input class="govuk-checkboxes__input" id="countries" name="countries" type="checkbox" value="low-income">
-                        <label class="govuk-label govuk-checkboxes__label" for="countries">
-                          I’m on a low income
-                        </label>
-                      </div>
-                      <div class="govuk-checkboxes__item">
-                        <input class="govuk-checkboxes__input" id="countries-2" name="countries" type="checkbox" value="unemployed">
-                        <label class="govuk-label govuk-checkboxes__label" for="countries-2">
-                          I’m unemployed
-                        </label>
-                      </div>
-                      <div class="govuk-checkboxes__item">
-                        <input class="govuk-checkboxes__input" id="countries-3" name="countries" type="checkbox" value="pension-age" checked>
-                        <label class="govuk-label govuk-checkboxes__label" for="countries-3">
-                          I’m state pension age
-                        </label>
-                      </div>
-                    
-                        <div class="govuk-checkboxes__item">
-                          <input class="govuk-checkboxes__input" id="countries-5" name="countries" type="checkbox" value="having-baby">
-                          <label class="govuk-label govuk-checkboxes__label" for="countries-5">
-                            I’m having a baby
-                          </label>
-                        </div>
-
-                        <div class="govuk-checkboxes__item">
-                            <input class="govuk-checkboxes__input" id="countries-6" name="countries" type="checkbox" value="have-child">
-                            <label class="govuk-label govuk-checkboxes__label" for="countries-6">
-                              I have a child
-                            </label>
-                          </div>
-                          <div class="govuk-checkboxes__item">
-                            <input class="govuk-checkboxes__input" id="countries-7" name="countries" type="checkbox" value="carer" checked>
-                            <label class="govuk-label govuk-checkboxes__label" for="countries-7">
-                              I’m a carer
-                            </label>
-                          </div>
-                          <div class="govuk-checkboxes__item">
-                            <input class="govuk-checkboxes__input" id="countries-8" name="countries" type="checkbox" value="support-for-death">
-                            <label class="govuk-label govuk-checkboxes__label" for="countries-8">
-                              I need support because someone has died
-                            </label>
-                          </div>
-                          <div class="govuk-checkboxes__item">
-                            <input class="govuk-checkboxes__input" id="countries-9" name="countries" type="checkbox" value="support-for-disability">
-                            <label class="govuk-label govuk-checkboxes__label" for="countries-9">
-                                Myself or my child have a disability or a long-term health condition
-                            </label>
-                          </div>            
-                     </div>
+                                </div>
+                                <div class="spacer-2">
+                                    <button class="govuk-button" data-module="govuk-button">
+                                        Update results
+                                       </button>
+                                    </div>
+                                </div>
+              
                     </div>
+                </div>
+              
+                </div>
+
                 </div>
             </div>
         </div>
@@ -234,6 +268,6 @@
 </div>
 </div>
 </div>
-
+</main>
 
 {% endblock %}

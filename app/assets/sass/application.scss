@@ -159,8 +159,8 @@ color:  $govuk-link-colour;
 
 .section-chunk {
     background:  govuk-colour("light-grey");
-    display: inline-block;
-    padding: 30px 30px 0px 30px;
+    display: block;
+    padding: 30px 30px 30px 30px;
     margin-bottom: 50px;
     border-radius: 2px;
 }
@@ -182,4 +182,9 @@ color:  $govuk-link-colour;
 
 .results-container {
     background-color: #D5EBFF;
+    padding-top: 30px;
+}
+
+.change-link {
+    text-align: right;
 }
