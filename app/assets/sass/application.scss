@@ -163,7 +163,11 @@ color:  $govuk-link-colour;
     padding: 30px 30px 30px 30px;
     margin-bottom: 50px;
     border-radius: 2px;
-}
+  
+    &.your-situation {
+      padding-bottom: 45px;
+    }
+  }
 
 
 .add-thing {
