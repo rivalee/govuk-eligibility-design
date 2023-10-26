@@ -1,11 +1,9 @@
 window.GOVUKPrototypeKit.documentReady(() => {
+  var benefitsList = ['I look after someone', "I'm state pension age"]
   var benefitsPreferences = document.querySelector('.your-situation-saved-mode'),
     benefitsForm = document.querySelector('.your-situation-edit-mode'),
     benfitsFormToggleButton = document.querySelector('#changeLink'),
     benefitsFormSaveButton = document.querySelector('#saveLink')
-  var benefitsList = []
-
-  benefitsPreferences.hidden = true
 
   const updateBenefitsList = (target) => {
     if (target.checked) {
@@ -18,6 +16,7 @@ window.GOVUKPrototypeKit.documentReady(() => {
   const updateBenefitsPreferencesUI = () => {
     benefitsPreferences.querySelector('.govuk-summary-list').innerHTML = ''
 
+    if (!benefitsList.length) return
     benefitsList.map((benefit) => {
       var div = document.createElement('div')
       div.className += `govuk-summary-list__row`
@@ -52,4 +51,7 @@ window.GOVUKPrototypeKit.documentReady(() => {
     updateBenefitsList(e.target)
     updateBenefitsPreferencesUI()
   })
+
+  benefitsPreferences.hidden = true
+  updateBenefitsPreferencesUI()
 })
