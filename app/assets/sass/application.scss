@@ -155,7 +155,7 @@ color:  $govuk-link-colour;
 }
 
 
-// Benefits filter page 
+// Benefits filter page
 
 .section-chunk {
     background:  govuk-colour("light-grey");
@@ -170,7 +170,12 @@ color:  $govuk-link-colour;
       }
     }
   }
-
+  
+  .caption {
+    @include govuk-media-query($from: tablet) {
+      margin: govuk-spacing(2) 0;
+    }
+  }
 
 .add-thing {
     margin-top: 10px;
