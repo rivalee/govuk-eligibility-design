@@ -30,9 +30,11 @@ window.GOVUKPrototypeKit.documentReady(() => {
   const toggleBenefitsFormSectionsUI = (e) => {
     e.preventDefault()
     if (benefitsPreferences.hidden) {
+      benfitsFormToggleButton.textContent = 'Change'
       benefitsPreferences.hidden = false
       benefitsForm.hidden = true
     } else {
+      benfitsFormToggleButton.textContent = 'Cancel'
       benefitsPreferences.hidden = true
       benefitsForm.hidden = false
     }
@@ -42,6 +44,7 @@ window.GOVUKPrototypeKit.documentReady(() => {
 
   benefitsFormSaveButton.addEventListener('click', (e) => {
     e.preventDefault()
+    benfitsFormToggleButton.textContent = 'Change'
     benefitsPreferences.hidden = false
     benefitsForm.hidden = true
   })
