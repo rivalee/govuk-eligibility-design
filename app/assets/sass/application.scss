@@ -165,7 +165,9 @@ color:  $govuk-link-colour;
     border-radius: 2px;
   
     &.your-situation {
-      padding-bottom: 45px;
+      @include govuk-media-query($from: tablet) {
+        padding-bottom: 45px;
+      }
     }
   }
 
