@@ -1,216 +1,209 @@
 //
 // For guidance on how to add CSS and SCSS see:
 // https://prototype-kit.service.gov.uk/docs/adding-css-javascript-and-images
-// 
+//
 
 // Add extra styles here
 
-
 .big-header-block {
-    background: #263135;
-    color: white;
-    height: 190px;
-    width: full-width;
-    margin-top: -10px;
-    padding: 30px;
+  background: #263135;
+  color: white;
+  height: 190px;
+  width: full-width;
+  margin-top: -10px;
+  padding: 30px;
 }
 
-
 .big-header-block {
-  h1, h2, p, a, a:visited {
+  h1,
+  h2,
+  p,
+  a,
+  a:visited {
     color: white;
   }
 }
 
 .main-body-content {
-    margin-top: 20px;
+  margin-top: 20px;
 }
 
 .body-block {
-    padding-top: 20px;
-    padding-bottom: 10px;
+  padding-top: 20px;
+  padding-bottom: 10px;
 }
 
-.white-link a, a:visited {
-    color: white;
+.white-link a,
+a:visited {
+  color: white;
 }
-
 
 .financial-support-checklist {
-    border-top: 4px solid #00703c;
-    padding-top: 15px;
+  border-top: 4px solid #00703c;
+  padding-top: 15px;
 }
 
 .card {
-    border-top: 1px solid $govuk-border-colour;
-    padding-top: 20px;
-    padding-bottom: 30px;
+  border-top: 1px solid $govuk-border-colour;
+  padding-top: 20px;
+  padding-bottom: 30px;
 }
 
 .checklist-card {
-    border-top: 2px solid #00703c;
-    background:  #DCF6EA;
-    padding: 12px 12px 1px 12px;
-    margin: 10px 0 0px 0;
+  border-top: 2px solid #00703c;
+  background: #dcf6ea;
+  padding: 12px 12px 1px 12px;
+  margin: 10px 0 0px 0;
 }
 
 .checklist-card p {
-    color: black;
+  color: black;
 }
 
-.page-list a, a:visited {
-color:  $govuk-link-colour;
+.page-list a,
+a:visited {
+  color: $govuk-link-colour;
 }
-
 
 .rec-block {
-    background: govuk-colour("light-grey");
-    padding: 10px 10px 1px 10px;
-    margin-top: -10px;
+  background: govuk-colour('light-grey');
+  padding: 10px 10px 1px 10px;
+  margin-top: -10px;
 }
 
 .calc-card-2 {
-    border-top: 3px solid $govuk-error-colour;
-    background: white;
-    padding: 20px;
-    margin-bottom: 30px;
+  border-top: 3px solid $govuk-error-colour;
+  background: white;
+  padding: 20px;
+  margin-bottom: 30px;
 }
 
 .rec-title {
-    margin-top: 20px;
+  margin-top: 20px;
 }
 
 .manage-page {
-    margin-bottom: 30px;
+  margin-bottom: 30px;
 }
 
 .flow-block {
-    background: govuk-colour("light-grey");
-    padding: 30px;
-    margin-bottom: 80px;
+  background: govuk-colour('light-grey');
+  padding: 30px;
+  margin-bottom: 80px;
 }
 
 .spacer-1 {
-    margin-top: 20px;
+  margin-top: 20px;
 }
 
 .spacer-2 {
-    margin-top: 30px;
+  margin-top: 30px;
 }
 
 .spacer-3 {
-    margin-top: 30px;
-    margin-bottom: 50px;
-
+  margin-top: 30px;
+  margin-bottom: 50px;
 }
 
-
 .eligibility-calc-block {
-    background: #D5EBFF;
-    width: full-width;
-    padding-top: 20px;
-    padding-bottom: 20px;
+  background: #d5ebff;
+  width: full-width;
+  padding-top: 20px;
+  padding-bottom: 20px;
 }
 
 .eligibility-calc-block-2 {
-    background: #D5EBFF;
-    width: full-width;
-    padding-top: 20px;
-    padding-bottom: 5px;
+  background: #d5ebff;
+  width: full-width;
+  padding-top: 20px;
+  padding-bottom: 5px;
 }
 .govuk-checkboxes__label:before {
-    background: #fff;
+  background: #fff;
 }
 
 .govuk-radios__label:before {
-    background: #fff;
+  background: #fff;
 }
 
 .calc-card-1 {
-    background: white;
-    padding: 20px;
-    border-top: 3px solid #1d70b8;
-    margin-bottom: 10px;
+  background: white;
+  padding: 20px;
+  border-top: 3px solid #1d70b8;
+  margin-bottom: 10px;
 }
 
-
-
 .share-link {
-    margin-top: 20px;
+  margin-top: 20px;
 }
 
 .content-to-show {
-    display: none;
+  display: none;
 }
 
 .outcomes-section {
-    background-color: #D5EBFF;
-    padding: 20px;
+  background-color: #d5ebff;
+  padding: 20px;
 }
-
 
 .page-actions-1 {
-    margin-top: 20px;
-    margin-bottom: 30px;
+  margin-top: 20px;
+  margin-bottom: 30px;
 }
-
 
 // Benefits filter page
 
 .section-chunk {
-    background:  govuk-colour("light-grey");
-    display: block;
-    padding: 30px 30px 30px 30px;
-    margin-bottom: 50px;
-    border-radius: 2px;
-  
-    &.your-situation {
-      @include govuk-media-query($from: tablet) {
-        padding-bottom: 45px;
-      }
-    }
-  }
-  
-  .caption {
-    @include govuk-media-query($from: tablet) {
-      margin: govuk-spacing(2) 0;
-    }
-  }
+  background: govuk-colour('light-grey');
+  display: block;
+  padding: 30px 30px 30px 30px;
+  margin-bottom: 50px;
+  border-radius: 2px;
 
-.add-thing {
-    margin-top: 10px;
+  &.your-situation {
+    @include govuk-media-query($from: tablet) {
+      padding-bottom: 45px;
+    }
+  }
 }
 
+.caption {
+  @include govuk-media-query($from: tablet) {
+    margin: govuk-spacing(2) 0;
+  }
+}
+
+.add-thing {
+  margin-top: 10px;
+}
 
 .calc-card-v3 {
-    border-left: 4px solid #1d70b8;
-    background: white;
-    padding: 30px;
-    margin-bottom: 60px;
-    margin-right: 30px;
-    min-height: 380px;
+  border-left: 4px solid #1d70b8;
+  background: white;
+  padding: 30px;
+  margin-bottom: 60px;
+  margin-right: 30px;
+  min-height: 380px;
+  display: flex;
+  flex-direction: column;
+
+  .cta {
+    align-items: flex-end;
     display: flex;
-    flex-direction: column;
-  
-    .cta {
-      align-items: flex-end;
-      display: flex;
-      flex-grow: 1;
-    }
+    flex-grow: 1;
   }
-
-
+}
 
 .results-container {
-    background-color: #D5EBFF;
-    padding-top: 30px;
+  background-color: #d5ebff;
+  padding-top: 30px;
 }
 
 .change-link {
-    text-align: right;
+  text-align: right;
 }
 
 .line {
-    border-top: 1px solid $govuk-border-colour;
-    padding-top: 10px;
+  border-top: 1px solid $govuk-border-colour;
+  padding-top: 10px;
 }
