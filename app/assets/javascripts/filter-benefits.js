@@ -29,7 +29,7 @@ window.GOVUKPrototypeKit.documentReady(() => {
         var div = document.createElement('div')
         div.className += `govuk-summary-list__row`
         if (key) {
-          div.innerHTML = `<dd class="govuk-summary-list__value">${key}</dd>`
+          div.innerHTML = `<dd class="govuk-summary-list__value is-capitalised">${key}</dd>`
         }
         div.innerHTML += `<dd class="govuk-summary-list__value">${value}</dd>`
         this.savedMode.querySelector('.govuk-summary-list').appendChild(div)
@@ -86,18 +86,23 @@ window.GOVUKPrototypeKit.documentReady(() => {
         this.toggleSettings(e, 'Change', false, true)
         this.updateSummary()
       })
+
       this.formatKey = (key) => key.split('_').join(' ')
+
       this.updateSummary = () => {
         this.savedMode.querySelector('.govuk-summary-list').innerHTML = ''
         if (this.createDate()) this.updateTemplate('what is the date?', this.dateObject.toDateString())
         for (const [key, value] of Object.entries(this.myInformation)) this.updateTemplate(this.formatKey(key), value)
       }
+
       this.createInformationObject = (formObject) => {
         return Object.keys(formObject)
           .filter((key) => !key.includes('what_is_your_date_of_birth'))
           .reduce((cur, key) => Object.assign(cur, { [key]: formObject[key] }), {})
       }
+
       this.createDate = () => (this.dateObject = new Date(this.myDates['what_is_your_date_of_birth[year]'], parseInt(this.myDates['what_is_your_date_of_birth[month]']) - 1, this.myDates['what_is_your_date_of_birth[day]']))
+
       this.createDateObject = (formObject) => {
         return Object.keys(formObject)
           .filter((key) => key.includes('what_is_your_date_of_birth'))
