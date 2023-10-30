@@ -160,10 +160,8 @@ a:visited {
   margin-bottom: 50px;
   border-radius: 2px;
 
-  &.your-situation {
-    @include govuk-media-query($from: tablet) {
-      padding-bottom: 45px;
-    }
+  @include govuk-media-query($from: tablet) {
+    padding-bottom: 45px;
   }
 }
 
@@ -206,4 +204,10 @@ a:visited {
 .line {
   border-top: 1px solid $govuk-border-colour;
   padding-top: 10px;
+}
+
+.is-capitalised {
+  &::first-letter {
+    text-transform: capitalize;
+  }
 }
