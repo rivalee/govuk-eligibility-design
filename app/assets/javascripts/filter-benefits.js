@@ -24,40 +24,44 @@ window.GOVUKPrototypeKit.documentReady(() => {
         this.savedMode.hidden = savedModeIsVisible
         this.formMode.hidden = formModeIsVisible
       }
+
+      this.updateTemplate = (key, value) => {
+        var div = document.createElement('div')
+        div.className += `govuk-summary-list__row`
+        if (key) {
+          div.innerHTML = `<dd class="govuk-summary-list__value">${key}</dd>`
+        }
+        div.innerHTML += `<dd class="govuk-summary-list__value">${value}</dd>`
+        this.savedMode.querySelector('.govuk-summary-list').appendChild(div)
+      }
     }
   }
 
   class MySituationForm extends MyForm {
     constructor(id) {
       super(id)
-      this.benefitsList = ['I look after someone', "I'm state pension age"]
+      this.myOptions = ['I look after someone', "I'm state pension age"]
       this.savePreferences = this.form.querySelector('.save')
       this.savePreferences.addEventListener('click', (e) => this.toggleSettings(e, 'Change', false, true))
 
       this.form.addEventListener('click', (e) => {
         if (!e.target.classList.contains('govuk-checkboxes__input')) return
-        this.updateBenefitsList(e.target)
+        this.updateMyOptions(e.target)
         this.updateSummary()
       })
 
-      this.updateBenefitsList = (target) => {
+      this.updateMyOptions = (target) => {
         if (target.checked) {
-          this.benefitsList.push(target.dataset.value)
+          this.myOptions.push(target.dataset.value)
         } else {
-          this.benefitsList = this.benefitsList.filter((item) => item !== target.dataset.value)
+          this.myOptions = this.myOptions.filter((item) => item !== target.dataset.value)
         }
       }
 
       this.updateSummary = () => {
         this.savedMode.querySelector('.govuk-summary-list').innerHTML = ''
-
-        if (!this.benefitsList.length) return
-        this.benefitsList.map((benefit) => {
-          var div = document.createElement('div')
-          div.className += `govuk-summary-list__row`
-          div.innerHTML = `<dd class="govuk-summary-list__value">${benefit}</dd>`
-          this.savedMode.querySelector('.govuk-summary-list').appendChild(div)
-        })
+        if (!this.myOptions.length) return
+        this.myOptions.map((option) => this.updateTemplate('', option))
       }
     }
   }
@@ -85,26 +89,8 @@ window.GOVUKPrototypeKit.documentReady(() => {
       this.formatKey = (key) => key.split('_').join(' ')
       this.updateSummary = () => {
         this.savedMode.querySelector('.govuk-summary-list').innerHTML = ''
-
-        if (this.createDate()) {
-          var div = document.createElement('div')
-          div.className += `govuk-summary-list__row`
-          div.innerHTML = `
-            <dd class="govuk-summary-list__value is-capitalised">what is the date?</dd>
-            <dd class="govuk-summary-list__value">${this.dateObject.toDateString()}</dd>
-          `
-          this.savedMode.querySelector('.govuk-summary-list').appendChild(div)
-        }
-
-        for (const [key, value] of Object.entries(this.myInformation)) {
-          var div = document.createElement('div')
-          div.className += `govuk-summary-list__row`
-          div.innerHTML = `
-              <dd class="govuk-summary-list__value is-capitalised">${this.formatKey(key)}?</dd>
-              <dd class="govuk-summary-list__value">${value}</dd>
-            `
-          this.savedMode.querySelector('.govuk-summary-list').appendChild(div)
-        }
+        if (this.createDate()) this.updateTemplate('what is the date?', this.dateObject.toDateString())
+        for (const [key, value] of Object.entries(this.myInformation)) this.updateTemplate(this.formatKey(key), value)
       }
       this.createInformationObject = (formObject) => {
         return Object.keys(formObject)
