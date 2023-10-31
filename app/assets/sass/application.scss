@@ -206,8 +206,11 @@ a:visited {
   padding-top: 10px;
 }
 
-.is-capitalised {
+.key-formatting {
   &::first-letter {
     text-transform: capitalize;
+  }
+  &::after {
+    content: '?';
   }
 }

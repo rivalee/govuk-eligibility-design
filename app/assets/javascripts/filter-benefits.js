@@ -33,7 +33,7 @@ window.GOVUKPrototypeKit.documentReady(() => {
         var div = document.createElement('div')
         div.className += `govuk-summary-list__row`
         if (key) {
-          div.innerHTML = `<dd class="govuk-summary-list__value is-capitalised">${key}</dd>`
+          div.innerHTML = `<dd class="govuk-summary-list__value key-formatting">${key}</dd>`
         }
         div.innerHTML += `<dd class="govuk-summary-list__value">${value}</dd>`
         this.savedMode.querySelector('.govuk-summary-list').appendChild(div)
@@ -100,7 +100,7 @@ window.GOVUKPrototypeKit.documentReady(() => {
 
       this.updateSummary = () => {
         this.savedMode.querySelector('.govuk-summary-list').innerHTML = ''
-        if (this.createDate()) this.updateTemplate('what is the date?', this.dateObject.toDateString())
+        if (this.createDate()) this.updateTemplate('what is the date', this.dateObject.toDateString())
         for (const [key, value] of Object.entries(this.myInformation)) this.updateTemplate(this.formatKey(key), value)
       }
 
