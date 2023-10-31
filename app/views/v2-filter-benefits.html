@@ -76,7 +76,7 @@
         <div class="main-form" id="myInformationForm">
           <div class="govuk-grid-row">
             <div class="govuk-grid-column-two-thirds">
-              <h2 class="govuk-heading-m">Add your information</h2>
+              <h2 class="govuk-heading-m">Add more information</h2>
             </div>
             <div class="govuk-grid-column-one-third change-link">
               <p class="govuk-body-m">
@@ -91,6 +91,25 @@
                 <div class="govuk-grid-column-full">
                   <div class="add-criteria" id="yourInformationForm">
                     <form method="POST" action="/" id="myForm">
+                      <div class="govuk-form-group">
+                        <fieldset class="govuk-fieldset" aria-describedby="contact-hint">
+                          <legend class="govuk-fieldset__legend">Do you already get Universal Credit, Pension Credit, or Housing Benefit?</legend>
+
+                          <div class="govuk-radios" data-module="govuk-radios">
+                            <div class="govuk-radios__item">
+                              <input class="govuk-radios__input" id="are_you_in_temporary,_sheltered_or_supported_housing[yes]" name="are_you_in_temporary,_sheltered_or_supported_housing" type="radio" value="Yes" data-aria-controls="conditional-contact" />
+                              <label class="govuk-label govuk-radios__label" for="are_you_in_temporary,_sheltered_or_supported housing[yes]"> Yes </label>
+                            </div>
+                            <div class="govuk-radios" data-module="govuk-radios">
+                              <div class="govuk-radios__item">
+                                <input class="govuk-radios__input" id="are_you_in_temporary,_sheltered_or_supported_housing[no]" name="are_you_in_temporary,_sheltered_or_supported_housing" type="radio" value="No" data-aria-controls="conditional-contact" checked />
+                                <label class="govuk-label govuk-radios__label" for="are_you_in_temporary,_sheltered_or_supported housing[no]"> No </label>
+                              </div>
+                            </div>
+                          </div>
+                        </fieldset>
+                      </div>
+
                       <div class="govuk-form-group">
                         <fieldset class="govuk-fieldset" role="group" aria-describedby="passport-issued-hint">
                           <legend class="govuk-fieldset__legend">What is your date of birth?</legend>
@@ -147,14 +166,14 @@
                             <div class="govuk-radios" data-module="govuk-radios">
                               <div class="govuk-radios__item">
                                 <input class="govuk-radios__input" id="are_you_looking_for_work[no]" name="are_you_looking_for_work" type="radio" value="No" data-aria-controls="conditional-contact" checked />
-                                <label class="govuk-label govuk-radios__label" for="are_you_looking_for_work[no]"> No </label>
+                                <label class="govuk-label govuk-radios__label" for="are_you_looking_for_work[no]"> No </label
                               </div>
                             </div>
                           </div>
                         </fieldset>
                       </div>
 
-                      <button class="govuk-button govuk-button--primary govuk-!-margin-bottom-0 save" type="submit" id="formButton" data-module="govuk-button" aria-controls="mySituationFormSavedMode" aria-expanded="true">Update results</button>
+                      <button class="govuk-button govuk-button--primary govuk-!-margin-bottom-0 save" type="submit" id="formButton" data-module="govuk-button" aria-controls="mySituationFormSavedMode" aria-expanded="true">Save</button>
                     </form>
                   </div>
                 </div>
