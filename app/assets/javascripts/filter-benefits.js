@@ -76,19 +76,21 @@ window.GOVUKPrototypeKit.documentReady(() => {
       super(id)
       this.formToggle.hidden = true
       this.myForm = this.form.querySelector('#myForm')
-      this.myInformation = { 'are_you_in_temporary,_sheltered_or_supported_housing': 'No', are_you_looking_for_work: 'No' }
+      this.myInformation = { 'do_you_already_get_universal_credit,_pension_credit,_or_housing_benefit': 'No', 'are_you_in_temporary,_sheltered_or_supported_housing': 'No', are_you_looking_for_work: 'No' }
       this.myDates = { 'what_is_your_date_of_birth[day]': '01', 'what_is_your_date_of_birth[month]': '11', 'what_is_your_date_of_birth[year]': '1961', 'are_you_in_temporary,_sheltered_or_supported_housing': 'No', are_you_looking_for_work: 'No' }
       this.dateObject
       this.savedMode.hidden = true
 
       this.myForm.addEventListener('submit', (e) => {
         e.preventDefault()
-        let formData = new FormData(e.target)
-        let formObject = Object.fromEntries(formData.entries())
+        // Updates saved values based on submitted form data
 
-        this.myInformation = this.createInformationObject(formObject)
-        this.myDates = this.createDateObject(formObject)
-        this.dateObject = this.createDate()
+        // let formData = new FormData(e.target)
+        // let formObject = Object.fromEntries(formData.entries())
+
+        // this.myInformation = this.createInformationObject(formObject)
+        // this.myDates = this.createDateObject(formObject)
+        // this.dateObject = this.createDate()
 
         this.toggleSettings(e, 'Change', false, true)
         this.updateSummary()
@@ -125,7 +127,7 @@ window.GOVUKPrototypeKit.documentReady(() => {
       mySituationForm.updateSummary()
     } else if (view.id == 'myInformationForm') {
       myInformationForm = new MyInformationForm(view.id)
-      myInformationForm.updateSummary()
+      // myInformationForm.updateSummary()
     } else {
       new MyForm(view.id)
     }
