@@ -3,10 +3,9 @@ window.GOVUKPrototypeKit.documentReady(() => {
     constructor(id) {
       this.formId = id
       this.form = document.querySelector(`#${this.formId}`)
-      this.savedMode = this.form.querySelector('.saved-mode')
       this.formMode = this.form.querySelector('.form-mode')
-      this.formMode.hidden = true
       this.formToggle = this.form.querySelector('.change')
+      this.savedMode = this.form.querySelector('.saved-mode')
 
       this.formToggle.addEventListener('click', (e) => this.toggleVisibility(e))
 
@@ -40,8 +39,10 @@ window.GOVUKPrototypeKit.documentReady(() => {
   class MySituationForm extends MyForm {
     constructor(id) {
       super(id)
+      this.formMode.hidden = true
       this.myOptions = ['I look after someone', "I'm state pension age"]
       this.savePreferences = this.form.querySelector('.save')
+
       this.savePreferences.addEventListener('click', (e) => this.toggleSettings(e, 'Change', false, true))
 
       this.form.addEventListener('click', (e) => {
@@ -73,6 +74,7 @@ window.GOVUKPrototypeKit.documentReady(() => {
       this.myInformation = { 'are_you_in_temporary,_sheltered_or_supported_housing': 'No', are_you_looking_for_work: 'No' }
       this.myDates = { 'what_is_your_date_of_birth[day]': '01', 'what_is_your_date_of_birth[month]': '11', 'what_is_your_date_of_birth[year]': '1961', 'are_you_in_temporary,_sheltered_or_supported_housing': 'No', are_you_looking_for_work: 'No' }
       this.dateObject
+      this.savedMode.hidden = true
 
       this.myForm.addEventListener('submit', (e) => {
         e.preventDefault()
