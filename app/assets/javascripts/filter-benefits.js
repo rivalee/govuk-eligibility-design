@@ -120,8 +120,8 @@ window.GOVUKPrototypeKit.documentReady(() => {
     }
   }
 
-  formViews = document.querySelectorAll('.main-form')
-  Array.from(formViews, (view) => {
+  views = document.querySelectorAll('.view')
+  Array.from(views, (view) => {
     if (view.id === 'mySituationForm') {
       var mySituationForm = new MySituationForm(view.id)
       mySituationForm.updateSummary()
