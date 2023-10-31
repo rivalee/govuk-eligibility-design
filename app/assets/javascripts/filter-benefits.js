@@ -6,6 +6,7 @@ window.GOVUKPrototypeKit.documentReady(() => {
       this.formMode = this.form.querySelector('.form-mode')
       this.formToggle = this.form.querySelector('.change')
       this.savedMode = this.form.querySelector('.saved-mode')
+      this.savePreferences = this.form.querySelector('.save')
 
       this.formToggle.addEventListener('click', (e) => this.toggleVisibility(e))
 
@@ -22,6 +23,9 @@ window.GOVUKPrototypeKit.documentReady(() => {
         this.formToggle.textContent = toggleText
         this.savedMode.hidden = savedModeIsVisible
         this.formMode.hidden = formModeIsVisible
+
+        this.formToggle.setAttribute('aria-expanded', this.formToggle.getAttribute('aria-expanded') === 'true' ? 'false' : 'true')
+        this.savePreferences.setAttribute('aria-expanded', this.savePreferences.getAttribute('aria-expanded') === 'true' ? 'false' : 'true')
       }
 
       this.updateTemplate = (key, value) => {
@@ -41,7 +45,6 @@ window.GOVUKPrototypeKit.documentReady(() => {
       super(id)
       this.formMode.hidden = true
       this.myOptions = ['I look after someone', "I'm state pension age"]
-      this.savePreferences = this.form.querySelector('.save')
 
       this.savePreferences.addEventListener('click', (e) => this.toggleSettings(e, 'Change', false, true))
 

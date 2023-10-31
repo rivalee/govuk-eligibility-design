@@ -13,13 +13,13 @@
             </div>
             <div class="govuk-grid-column-one-third change-link">
               <p class="govuk-body-m">
-                <a class="change" href="#">Change <span class="govuk-visually-hidden">your situation</span></a>
+                <a class="change" href="#" aria-controls="mySituationFormSavedMode" aria-expanded="false">Change <span class="govuk-visually-hidden">your situation</span></a>
               </p>
             </div>
           </div>
 
           <div class="section-chunk">
-            <div class="saved-mode">
+            <div class="saved-mode" id="mySituationFormSavedMode">
               <div class="govuk-grid-row">
                 <div class="govuk-grid-column-full">
                   <dl class="govuk-summary-list govuk-!-margin-bottom-0">
@@ -67,7 +67,7 @@
                 <label class="govuk-label govuk-checkboxes__label" for="countries-9"> Myself or my child have a disability or a long-term health condition </label>
               </div>
               <div class="spacer-2">
-                <button class="govuk-button govuk-button--primary govuk-!-margin-bottom-0 save" data-module="govuk-button" id="saveLink">Save</button>
+                <button class="govuk-button govuk-button--primary govuk-!-margin-bottom-0 save" data-module="govuk-button" aria-controls="mySituationFormSavedMode" aria-expanded="false">Save</button>
               </div>
             </div>
           </div>
@@ -80,13 +80,13 @@
             </div>
             <div class="govuk-grid-column-one-third change-link">
               <p class="govuk-body-m">
-                <a class="change" href="#">Change <span class="govuk-visually-hidden">your information</span></a>
+                <a class="change" href="#" aria-controls="yourInformationFormFormMode" aria-expanded="true">Cancel <span class="govuk-visually-hidden">your information</span></a>
               </p>
             </div>
           </div>
 
           <div class="section-chunk">
-            <div class="form-mode">
+            <div class="form-mode" id="yourInformationFormFormMode">
               <div class="govuk-grid-row">
                 <div class="govuk-grid-column-full">
                   <div class="add-criteria" id="yourInformationForm">
@@ -153,7 +153,8 @@
                           </div>
                         </fieldset>
                       </div>
-                      <button class="govuk-button govuk-button--primary govuk-!-margin-bottom-0 save" data-module="govuk-button" type="submit" id="formButton">Update results</button>
+
+                      <button class="govuk-button govuk-button--primary govuk-!-margin-bottom-0 save" type="submit" id="formButton" data-module="govuk-button" aria-controls="mySituationFormSavedMode" aria-expanded="true">Update results</button>
                     </form>
                   </div>
                 </div>
