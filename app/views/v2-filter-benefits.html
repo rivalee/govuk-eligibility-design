@@ -67,7 +67,7 @@
                 <label class="govuk-label govuk-checkboxes__label" for="countries-9"> Myself or my child have a disability or a long-term health condition </label>
               </div>
               <div class="spacer-2">
-                <button class="govuk-button govuk-button--primary govuk-!-margin-bottom-0 save" data-module="govuk-button" aria-controls="mySituationFormSavedMode" aria-expanded="false">Save</button>
+                <button class="govuk-button govuk-button--primary govuk-!-margin-bottom-0 save" data-module="govuk-button" aria-controls="mySituationFormSavedMode" aria-expanded="false">Save and update results</button>
               </div>
             </div>
           </div>
@@ -91,24 +91,6 @@
                 <div class="govuk-grid-column-full">
                   <div class="add-criteria" id="yourInformationForm">
                     <form method="POST" action="/" id="myForm">
-                      <div class="govuk-form-group">
-                        <fieldset class="govuk-fieldset" aria-describedby="contact-hint">
-                          <legend class="govuk-fieldset__legend caption">Do you already get Universal Credit, Pension Credit, Housing Benefit, or income-based Job Seeker's Allowance?</legend>
-
-                          <div class="govuk-radios" data-module="govuk-radios">
-                            <div class="govuk-radios__item">
-                              <input class="govuk-radios__input" id="do_you_already_get_universal_credit,_pension_credit,_or_housing_benefit[yes]" name="do_you_already_get_universal_credit,_pension_credit,_or_housing_benefit" type="radio" value="Yes" data-aria-controls="conditional-contact" />
-                              <label class="govuk-label govuk-radios__label" for="do_you_already_get_universal_credit,_pension_credit,_or_housing_benefit[yes]"> Yes </label>
-                            </div>
-                            <div class="govuk-radios" data-module="govuk-radios">
-                              <div class="govuk-radios__item">
-                                <input class="govuk-radios__input" id="do_you_already_get_universal_credit,_pension_credit,_or_housing_benefit[no]" name="do_you_already_get_universal_credit,_pension_credit,_or_housing_benefit" type="radio" value="No" data-aria-controls="conditional-contact" />
-                                <label class="govuk-label govuk-radios__label" for="do_you_already_get_universal_credit,_pension_credit,_or_housing_benefit[no]"> No </label>
-                              </div>
-                            </div>
-                          </div>
-                        </fieldset>
-                      </div>
 
                       <div class="govuk-form-group">
                         <fieldset class="govuk-fieldset" role="group" aria-describedby="passport-issued-hint">
@@ -172,8 +154,26 @@
                           </div>
                         </fieldset>
                       </div>
+                      <div class="govuk-form-group">
+                        <fieldset class="govuk-fieldset" aria-describedby="contact-hint">
+                          <legend class="govuk-fieldset__legend caption">Do you already get Universal Credit, Pension Credit, Housing Benefit, or income-based Job Seeker's Allowance?</legend>
 
-                      <button class="govuk-button govuk-button--primary govuk-!-margin-bottom-0 save" type="submit" id="formButton" data-module="govuk-button" aria-controls="mySituationFormSavedMode" aria-expanded="true">Save</button>
+                          <div class="govuk-radios" data-module="govuk-radios">
+                            <div class="govuk-radios__item">
+                              <input class="govuk-radios__input" id="do_you_already_get_universal_credit,_pension_credit,_or_housing_benefit[yes]" name="do_you_already_get_universal_credit,_pension_credit,_or_housing_benefit" type="radio" value="Yes" data-aria-controls="conditional-contact" />
+                              <label class="govuk-label govuk-radios__label" for="do_you_already_get_universal_credit,_pension_credit,_or_housing_benefit[yes]"> Yes </label>
+                            </div>
+                            <div class="govuk-radios" data-module="govuk-radios">
+                              <div class="govuk-radios__item">
+                                <input class="govuk-radios__input" id="do_you_already_get_universal_credit,_pension_credit,_or_housing_benefit[no]" name="do_you_already_get_universal_credit,_pension_credit,_or_housing_benefit" type="radio" value="No" data-aria-controls="conditional-contact" />
+                                <label class="govuk-label govuk-radios__label" for="do_you_already_get_universal_credit,_pension_credit,_or_housing_benefit[no]"> No </label>
+                              </div>
+                            </div>
+                          </div>
+                        </fieldset>
+                      </div>
+
+                      <button class="govuk-button govuk-button--primary govuk-!-margin-bottom-0 save" type="submit" id="formButton" data-module="govuk-button" aria-controls="mySituationFormSavedMode" aria-expanded="true">Save and update results</button>
                     </form>
                   </div>
                 </div>
