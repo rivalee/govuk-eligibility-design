@@ -213,3 +213,13 @@ a:visited {
     content: '?';
   }
 }
+
+// modify layout
+@include govuk-media-query($from: tablet) {
+  .is-flex {
+    display: flex;
+    > .govuk-grid-column-one-half {
+      display: flex;
+    }
+  }
+}

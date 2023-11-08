@@ -1,4 +1,6 @@
-{% extends "layouts/main.html" %} {% set pageName="Home" %} {% block main %}
+{% extends "layouts/main.html" %}
+{% set pageName="Home" %}
+{% block main %}
 
 <main class="govuk-main-wrapper govuk-!-padding-bottom-0" id="main-content" role="main">
   <div class="govuk-width-container">
@@ -204,7 +206,7 @@
 
       <div class="govuk-grid-row">
         <div class="govuk-grid-column-full">
-          <div class="govuk-grid-row">
+          <div class="govuk-grid-row is-flex">
             <div class="govuk-grid-column-one-half">
               <div class="calc-card-v3">
                 <h3 class="govuk-heading-m">Housing Benefit</h3>
@@ -251,7 +253,7 @@
       </div>
       <div class="govuk-grid-row">
         <div class="govuk-grid-column-full">
-          <div class="govuk-grid-row">
+          <div class="govuk-grid-row is-flex">
             <div class="govuk-grid-column-one-half">
               <div class="calc-card-v3">
                 <h3 class="govuk-heading-m">TV Licence (over 75)</h3>
@@ -299,7 +301,7 @@
       </div>
       <div class="govuk-grid-row">
         <div class="govuk-grid-column-full">
-          <div class="govuk-grid-row">
+          <div class="govuk-grid-row is-flex">
             <div class="govuk-grid-column-one-half">
               <div class="calc-card-v3">
                 <h3 class="govuk-heading-m">Carer's Allowance</h3>
@@ -347,7 +349,7 @@
       </div>
       <div class="govuk-grid-row">
         <div class="govuk-grid-column-full">
-          <div class="govuk-grid-row">
+          <div class="govuk-grid-row is-flex">
             <div class="govuk-grid-column-one-half">
               <div class="calc-card-v3">
                 <h3 class="govuk-heading-m">Warm Home Discount</h3>
@@ -397,7 +399,7 @@
       </div>
       <div class="govuk-grid-row">
         <div class="govuk-grid-column-full">
-          <div class="govuk-grid-row">
+          <div class="govuk-grid-row is-flex">
             <div class="govuk-grid-column-one-half">
               <div class="calc-card-v3">
                 <h3 class="govuk-heading-m">Attendance Allowance</h3>
@@ -449,6 +451,7 @@
   </div>
 </main>
 
-{% endblock %} {% block pageScripts %}
+{% endblock %}
+{% block pageScripts %}
 <script src="/public/javascripts/filter-benefits.js"></script>
 {% endblock %}
