@@ -216,10 +216,22 @@ a:visited {
 
 // modify layout
 @include govuk-media-query($from: tablet) {
-  .is-flex {
+  .is-grid {
+    // display: flex;
+    // flex-direction: row;
+    // width: 100%;
+    // flex-wrap: wrap;
+    display: grid;
+    grid-template-areas: 'a a';
+    gap: 30px;
+    grid-auto-columns: 1fr;
+    grid-auto-rows: 1fr;
+  }
+
+  .calc-card-v3 {
     display: flex;
-    > .govuk-grid-column-one-half {
-      display: flex;
-    }
+    flex-direction: column;
+    // flex: 1 1 40%;
+    // max-width: calc(50% - 30px);
   }
 }
