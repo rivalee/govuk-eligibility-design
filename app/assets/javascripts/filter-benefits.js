@@ -45,7 +45,7 @@ window.GOVUKPrototypeKit.documentReady(() => {
     constructor(id) {
       super(id)
       this.formMode.hidden = true
-      this.myOptions = ['I look after someone', "I'm over state pension age"]
+      this.myOptions = ["I'm over state pension age", 'I look after someone']
 
       this.savePreferences.addEventListener('click', (e) => this.toggleSettings(e, 'Change', false, true))
 
