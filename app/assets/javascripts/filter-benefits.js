@@ -97,7 +97,7 @@ window.GOVUKPrototypeKit.documentReady(() => {
         // this.dateObject = this.createDate()
 
         this.toggleSettings(e, 'Change', false, true)
-        this.updateSummary()
+        // this.updateSummary()
       })
 
       this.formatKey = (key) => key.split('_').join(' ')
