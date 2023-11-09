@@ -76,7 +76,11 @@ window.GOVUKPrototypeKit.documentReady(() => {
       super(id)
       this.formToggle.hidden = true
       this.myForm = this.form.querySelector('#myForm')
-      this.myInformation = { 'do_you_already_get_universal_credit,_pension_credit,_or_housing_benefit': 'No', 'are_you_in_temporary,_sheltered_or_supported_housing': 'No', are_you_looking_for_work: 'No' }
+      this.myInformation = {
+        'are_you_in_temporary,_sheltered_or_supported_housing': 'No',
+        are_you_looking_for_work: 'No',
+        "do_you_already_get_universal_credit,_pension_credit,_housing_benefit,_or_income-based_job_seeker's_allowance,_pension_credit,_or_housing_benefit": 'No',
+      }
       this.myDates = { 'what_is_your_date_of_birth[day]': '01', 'what_is_your_date_of_birth[month]': '11', 'what_is_your_date_of_birth[year]': '1961', 'are_you_in_temporary,_sheltered_or_supported_housing': 'No', are_you_looking_for_work: 'No' }
       this.dateObject
       this.savedMode.hidden = true
@@ -100,7 +104,7 @@ window.GOVUKPrototypeKit.documentReady(() => {
 
       this.updateSummary = () => {
         this.savedMode.querySelector('.govuk-summary-list').innerHTML = ''
-        if (this.createDate()) this.updateTemplate('what is the date', this.dateObject.toDateString())
+        if (this.createDate()) this.updateTemplate('what is your date of birth', this.dateObject.toDateString())
         for (const [key, value] of Object.entries(this.myInformation)) this.updateTemplate(this.formatKey(key), value)
       }
 
