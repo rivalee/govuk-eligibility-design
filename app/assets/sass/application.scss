@@ -11,7 +11,7 @@
   height: 190px;
   width: full-width;
   margin-top: -10px;
-  padding: govuk-spacing(6) govuk-spacing(6) 0;
+  padding: govuk-spacing(6) 0 0;
 
   @include govuk-media-query($from: tablet) {
     padding: govuk-spacing(6);
@@ -239,5 +239,3 @@ a:visited {
     // max-width: calc(50% - 30px);
   }
 }
-
-
