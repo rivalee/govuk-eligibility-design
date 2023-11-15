@@ -118,9 +118,14 @@ a:visited {
 
 .eligibility-calc-block-2 {
   background: #d5ebff;
-  width: full-width;
-  padding-top: 20px;
-  padding-bottom: 5px;
+  // width: full-width;
+  // padding-top: 20px;
+  // padding-bottom: 5px;
+  padding: 22px 0 20px;
+
+  @include govuk-media-query($from: tablet) {
+    padding: 42px 0 40px;
+  }
 }
 .govuk-checkboxes__label:before {
   background: #fff;
