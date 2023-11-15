@@ -1,220 +1,140 @@
 {% extends "layouts/main.html" %}
-
 {% set pageName="Home" %}
-
 {% block main %}
-      <div class="big-header-block">
-        
-        <div class="govuk-width-container">
-    
-            <div class="govuk-grid-row">
-              <div class="govuk-grid-column-two-thirds">
-                <p class="govuk-body white-link"><a href="https://gov.uk">Home</a></p>
-                <h1 class="govuk-heading-xl">Benefits</h1>
 
-                <p class="govuk-body-l">Includes eligibility, appeals, tax credits and Universal Credit
-                </p>
-            
-          </main>
+<div class="big-header-block">
+  <div class="govuk-width-container">
+    <div class="govuk-grid-row">
+      <div class="govuk-grid-column-two-thirds">
+        <p class="govuk-body white-link"><a href="https://gov.uk">Home</a></p>
+        <h1 class="govuk-heading-xl">Benefits</h1>
+        <p class="govuk-body-l">Includes eligibility, appeals, tax credits and Universal Credit</p>
+      </div>
+    </div>
+  </div>
+</div>
+<div class="eligibility-calc-block-2">
+  <div class="govuk-width-container">
+    <div class="govuk-grid-row">
+      <div class="govuk-grid-column-two-thirds">
+        <p class="body-s"><a href="v2-initial-step.html">Cancel</a></p>
+        <h2 class="govuk-heading-m">Find financial support</h2>
+        <p class="govuk-body">Answer a few questions to see what you could get</p>
+        <p class="govuk-body">Select everything that applies to you</p>
+
+        <div class="govuk-checkboxes__item">
+          <input class="govuk-checkboxes__input" id="countries" name="countries" type="checkbox" value="low-income" />
+          <label class="govuk-label govuk-checkboxes__label" for="countries"> I’m on a low income </label>
+        </div>
+        <div class="govuk-checkboxes__item">
+          <input class="govuk-checkboxes__input" id="countries-2" name="countries" type="checkbox" value="unemployed" />
+          <label class="govuk-label govuk-checkboxes__label" for="countries-2"> I’m unemployed </label>
+        </div>
+        <div class="govuk-checkboxes__item">
+          <input class="govuk-checkboxes__input" id="countries-3" name="countries" type="checkbox" value="pension-age" />
+          <label class="govuk-label govuk-checkboxes__label" for="countries-3"> I’m over state pension age </label>
+        </div>
+        <div class="govuk-checkboxes__item">
+          <input class="govuk-checkboxes__input" id="countries-5" name="countries" type="checkbox" value="having-baby" />
+          <label class="govuk-label govuk-checkboxes__label" for="countries-5"> I’m having a baby </label>
+        </div>
+        <div class="govuk-checkboxes__item">
+          <input class="govuk-checkboxes__input" id="countries-6" name="countries" type="checkbox" value="have-child" />
+          <label class="govuk-label govuk-checkboxes__label" for="countries-6"> I’m a parent </label>
+        </div>
+        <div class="govuk-checkboxes__item">
+          <input class="govuk-checkboxes__input" id="countries-7" name="countries" type="checkbox" value="carer" />
+          <label class="govuk-label govuk-checkboxes__label" for="countries-7"> I look after someone </label>
+        </div>
+        <div class="govuk-checkboxes__item">
+          <input class="govuk-checkboxes__input" id="countries-8" name="countries" type="checkbox" value="support-for-death" />
+          <label class="govuk-label govuk-checkboxes__label" for="countries-8"> I need help paying for a funeral </label>
+        </div>
+        <div class="govuk-checkboxes__item">
+          <input class="govuk-checkboxes__input" id="countries-9" name="countries" type="checkbox" value="support-for-disability" />
+          <label class="govuk-label govuk-checkboxes__label" for="countries-9"> My child or I have a disability or a long-term health condition </label>
+        </div>
+
+        <div class="govuk-!-static-margin-top-6">
+          <a href="/v2-filter-benefits.html"> <button class="govuk-button govuk-!-margin-bottom-0" data-module="govuk-button">Next</button> </a>
         </div>
       </div>
-      
-    
     </div>
   </div>
-  <div class="eligibility-calc-block-2">
-        
-    <div class="govuk-width-container">
-
-        <div class="govuk-grid-row">
-          <div class="govuk-grid-column-two-thirds">
-            <p class="body-s"><a href="v2-initial-step.html">Cancel</a></p>
-            <h2 class="govuk-heading-m">Find financial support
-            </h2>
-            <p class="govuk-body">Answer a few questions to see what you could get</p>
-
-                <p class="govuk-body">Select everything that applies to you</p>
-
-                      <div class="govuk-checkboxes__item">
-                        <input class="govuk-checkboxes__input" id="countries" name="countries" type="checkbox" value="low-income">
-                        <label class="govuk-label govuk-checkboxes__label" for="countries">
-                          I’m on a low income
-                        </label>
-                      </div>
-                      <div class="govuk-checkboxes__item">
-                        <input class="govuk-checkboxes__input" id="countries-2" name="countries" type="checkbox" value="unemployed">
-                        <label class="govuk-label govuk-checkboxes__label" for="countries-2">
-                          I’m unemployed
-                        </label>
-                      </div>
-                      <div class="govuk-checkboxes__item">
-                        <input class="govuk-checkboxes__input" id="countries-3" name="countries" type="checkbox" value="pension-age">
-                        <label class="govuk-label govuk-checkboxes__label" for="countries-3">
-                          I’m over state pension age
-                        </label>
-                      </div>
-                    
-                        <div class="govuk-checkboxes__item">
-                          <input class="govuk-checkboxes__input" id="countries-5" name="countries" type="checkbox" value="having-baby">
-                          <label class="govuk-label govuk-checkboxes__label" for="countries-5">
-                            I’m having a baby
-                          </label>
-                        </div>
-
-                        <div class="govuk-checkboxes__item">
-                            <input class="govuk-checkboxes__input" id="countries-6" name="countries" type="checkbox" value="have-child">
-                            <label class="govuk-label govuk-checkboxes__label" for="countries-6">
-                              I’m a parent
-                            </label>
-                          </div>
-                          <div class="govuk-checkboxes__item">
-                            <input class="govuk-checkboxes__input" id="countries-7" name="countries" type="checkbox" value="carer">
-                            <label class="govuk-label govuk-checkboxes__label" for="countries-7">
-                              I look after someone
-                            </label>
-                          </div>
-                          <div class="govuk-checkboxes__item">
-                            <input class="govuk-checkboxes__input" id="countries-8" name="countries" type="checkbox" value="support-for-death">
-                            <label class="govuk-label govuk-checkboxes__label" for="countries-8">
-                              I need help paying for a funeral
-                            </label>
-                          </div>
-                          <div class="govuk-checkboxes__item">
-                            <input class="govuk-checkboxes__input" id="countries-9" name="countries" type="checkbox" value="support-for-disability">
-                            <label class="govuk-label govuk-checkboxes__label" for="countries-9">
-                              My child or I have a disability or a long-term health condition
-                            </label>
-                          </div>   
-
-                            <div class="govuk-!-static-margin-top-6">
-                          <a href="/v2-filter-benefits.html">
-                            <button class="govuk-button govuk-!-margin-bottom-0" data-module="govuk-button">
-                                Next
-                              </button>  </a>       
-                            </div>    
-                  </div>
-
-                  
-                
-              
-                    </div>
-                      </div>
-                    </div>
-    </div>
-  </div>
-  
-
-  </div>
-</div>
-</div>
-</div>
-</div>
-    
-
 
   <div class="govuk-width-container">
     <div class="body-block">
-    <div class="govuk-grid-row">
-            <div class="govuk-grid-column-full padding-top: govuk-spacing(30);">
-                <div class="govuk-grid-row">
-                  <div class="govuk-grid-column-one-third">
-                    <div class="card">
-                    <h2 class="govuk-heading-s"><a href="https://www.gov.uk/browse/benefits/manage-your-benefit">Manage an existing benefit, payment or claim</a></h2>
-                    <p class="govuk-body-s">
-                      Sign in to your account, report changes, find out about overpayments, or appeal a decision. Includes existing Universal Credit and tax credits claims.
-                    </p>
-                  </div>
-                  </div>
-                  <div class="govuk-grid-column-one-third">
-                    <div class="card">
-                    <h2 class="govuk-heading-s"><a href="https://www.gov.uk/browse/benefits/looking-for-work">Benefits and financial support if you're looking for work</a> </h2>
-                    <p class="govuk-body-s">
-                      Help if you're looking for a new job, are out of work or affected by redundancy. Includes Universal Credit and Jobseeker’s Allowance (JSA).
-                    </p>
-                    </div>
-                </div>
-                    <div class="govuk-grid-column-one-third">
-                        <div class="card">
-                        <h2 class="govuk-heading-s"><a href="https://www.gov.uk/browse/benefits/unable-to-work">Benefits and financial support if you're temporarily unable to work</a></h2>
-                        <p class="govuk-body-s">
-                          Help if you’re unable to work because you’re ill or self-isolating. Includes Universal Credit and Employment and Support Allowance (ESA).
-            
-                      </p>
-                      </div>
-                  </div>            
-                </div>
-             </div>
-    </div>            
-    <div class="govuk-grid-row">
+      <div class="govuk-grid-row">
         <div class="govuk-grid-column-full padding-top: govuk-spacing(30);">
-            <div class="govuk-grid-row">
-              <div class="govuk-grid-column-one-third">
-                <div class="card">
-                <h2 class="govuk-heading-s"><a href="https://www.gov.uk/browse/benefits/families">Benefits and financial support for families</a></h2>
-                <p class="govuk-body-s">
-                    Help if you look after children or plan to have or adopt a child. Includes Child Benefit.</p>
-              </div>
-              </div>
-              <div class="govuk-grid-column-one-third">
-                <div class="card">
-                <h2 class="govuk-heading-s"><a href="https://www.gov.uk/browse/benefits/disability">Benefits and financial support if you're disabled or have a health condition</a> </h2>
-                <p class="govuk-body-s">
-                    Help if you're living with a health condition or disability. Includes Employment and Support Allowance (ESA).                </p>
-                </div>
-            </div>
-                <div class="govuk-grid-column-one-third">
-                    <div class="card">
-                    <h2 class="govuk-heading-s"><a href="https://www.gov.uk/browse/benefits/help-for-carers">Benefits and financial support if you're caring for someone</a></h2>
-                    <p class="govuk-body-s">
-                        Help if you regularly spend time caring for someone. Includes Universal Credit.
-                  </p>
-                  </div>
-              </div>            
-            </div>
-         </div>
-</div>            
-<div class="govuk-grid-row">
-    <div class="govuk-grid-column-full padding-top: govuk-spacing(30);">
-        <div class="govuk-grid-row">
-          <div class="govuk-grid-column-one-third">
-            <div class="card">
-            <h2 class="govuk-heading-s"><a href="https://www.gov.uk/browse/benefits/low-income">Benefits and financial support if you're on a low income</a></h2>
-            <p class="govuk-body-s">
-                Help with heating, housing and other living costs. Includes Universal Credit.
-            </p>
-          </div>
-          </div>
-          <div class="govuk-grid-column-one-third">
-            <div class="card">
-            <h2 class="govuk-heading-s"><a href="https://www.gov.uk/browse/benefits/bereavement">Benefits and financial support when someone dies</a> </h2>
-            <p class="govuk-body-s">
-                Help if you’re unable to work because you’re ill or self-isolating. Includes Universal Credit and Employment and Support Allowance (ESA).
-            </p>
-            </div>
-        </div>
+          <div class="govuk-grid-row">
             <div class="govuk-grid-column-one-third">
-              <p>&nbsp;
-              </p>
+              <div class="card">
+                <h2 class="govuk-heading-s"><a href="https://www.gov.uk/browse/benefits/manage-your-benefit">Manage an existing benefit, payment or claim</a></h2>
+                <p class="govuk-body-s">Sign in to your account, report changes, find out about overpayments, or appeal a decision. Includes existing Universal Credit and tax credits claims.</p>
               </div>
-          </div>            
-        </div>
-     </div>
-</div>            
-</div>
-</div>
-
-  
-            
-         
-
+            </div>
+            <div class="govuk-grid-column-one-third">
+              <div class="card">
+                <h2 class="govuk-heading-s"><a href="https://www.gov.uk/browse/benefits/looking-for-work">Benefits and financial support if you're looking for work</a></h2>
+                <p class="govuk-body-s">Help if you're looking for a new job, are out of work or affected by redundancy. Includes Universal Credit and Jobseeker’s Allowance (JSA).</p>
+              </div>
+            </div>
+            <div class="govuk-grid-column-one-third">
+              <div class="card">
+                <h2 class="govuk-heading-s"><a href="https://www.gov.uk/browse/benefits/unable-to-work">Benefits and financial support if you're temporarily unable to work</a></h2>
+                <p class="govuk-body-s">Help if you’re unable to work because you’re ill or self-isolating. Includes Universal Credit and Employment and Support Allowance (ESA).</p>
+              </div>
+            </div>
           </div>
         </div>
+      </div>
+      <div class="govuk-grid-row">
+        <div class="govuk-grid-column-full padding-top: govuk-spacing(30);">
+          <div class="govuk-grid-row">
+            <div class="govuk-grid-column-one-third">
+              <div class="card">
+                <h2 class="govuk-heading-s"><a href="https://www.gov.uk/browse/benefits/families">Benefits and financial support for families</a></h2>
+                <p class="govuk-body-s">Help if you look after children or plan to have or adopt a child. Includes Child Benefit.</p>
+              </div>
+            </div>
+            <div class="govuk-grid-column-one-third">
+              <div class="card">
+                <h2 class="govuk-heading-s"><a href="https://www.gov.uk/browse/benefits/disability">Benefits and financial support if you're disabled or have a health condition</a></h2>
+                <p class="govuk-body-s">Help if you're living with a health condition or disability. Includes Employment and Support Allowance (ESA).</p>
+              </div>
+            </div>
+            <div class="govuk-grid-column-one-third">
+              <div class="card">
+                <h2 class="govuk-heading-s"><a href="https://www.gov.uk/browse/benefits/help-for-carers">Benefits and financial support if you're caring for someone</a></h2>
+                <p class="govuk-body-s">Help if you regularly spend time caring for someone. Includes Universal Credit.</p>
+              </div>
+            </div>
+          </div>
         </div>
-
-  
-
-
+      </div>
+      <div class="govuk-grid-row">
+        <div class="govuk-grid-column-full padding-top: govuk-spacing(30);">
+          <div class="govuk-grid-row">
+            <div class="govuk-grid-column-one-third">
+              <div class="card">
+                <h2 class="govuk-heading-s"><a href="https://www.gov.uk/browse/benefits/low-income">Benefits and financial support if you're on a low income</a></h2>
+                <p class="govuk-body-s">Help with heating, housing and other living costs. Includes Universal Credit.</p>
+              </div>
+            </div>
+            <div class="govuk-grid-column-one-third">
+              <div class="card">
+                <h2 class="govuk-heading-s"><a href="https://www.gov.uk/browse/benefits/bereavement">Benefits and financial support when someone dies</a></h2>
+                <p class="govuk-body-s">Help if you’re unable to work because you’re ill or self-isolating. Includes Universal Credit and Employment and Support Allowance (ESA).</p>
+              </div>
+            </div>
+            <div class="govuk-grid-column-one-third">
+              <p>&nbsp;</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
   </div>
 </div>
-{% endblock %}
 
+{% endblock %}
