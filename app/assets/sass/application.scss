@@ -188,7 +188,7 @@ a:visited {
   border-left: 3px solid #1d70b8;
   background: white;
   padding: 30px;
-  margin-bottom: 60px;
+  margin-bottom: 40px;
   margin-right: 30px;
   display: flex;
   flex-direction: column;
@@ -241,6 +241,28 @@ a:visited {
     display: flex;
     flex-direction: column;
     // flex: 1 1 40%;
+    // max-width: calc(50% - 30px);
+  }
+}
+
+
+// modify layout 2
+@include govuk-media-query($from: tablet) {
+  .is-grid-2 {
+    // display: flex;
+    // flex-direction: row;
+    // width: 66%;
+    // flex-wrap: wrap;
+    display: grid;
+    grid-template-areas: 'a';
+    gap: 20px;
+  }
+
+  .calc-card-v3 {
+    display: flex;
+    flex-direction: column;
+    width: 66%;
+    // flex: 1 66%;
     // max-width: calc(50% - 30px);
   }
 }
