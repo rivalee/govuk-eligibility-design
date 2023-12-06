@@ -20,8 +20,10 @@ window.GOVUKPrototypeKit.documentReady(() => {
 
       this.toggleSettings = (e, toggleText, savedModeIsVisible, formModeIsVisible) => {
         e.preventDefault()
-        if (this.formToggle.hidden) this.formToggle.hidden = false
-        this.formToggle.textContent = toggleText
+        if (toggleText) {
+          if (this.formToggle.hidden) this.formToggle.hidden = false
+          this.formToggle.textContent = toggleText
+        }
         this.savedMode.hidden = savedModeIsVisible
         this.formMode.hidden = formModeIsVisible
 
@@ -74,6 +76,8 @@ window.GOVUKPrototypeKit.documentReady(() => {
   class MyInformationForm extends MyForm {
     constructor(id) {
       super(id)
+      this.togglePrompt = document.querySelector('.prompt')
+      this.formMode.hidden = true
       this.formToggle.hidden = true
       this.myForm = this.form.querySelector('#myForm')
       this.myInformation = {
@@ -84,6 +88,11 @@ window.GOVUKPrototypeKit.documentReady(() => {
       this.myDates = { 'what_is_your_date_of_birth[day]': '01', 'what_is_your_date_of_birth[month]': '11', 'what_is_your_date_of_birth[year]': '1961', 'are_you_in_temporary,_sheltered_or_supported_housing': 'No', are_you_looking_for_work: 'No' }
       this.dateObject
       this.savedMode.hidden = true
+
+      this.togglePrompt.addEventListener('click', (e) => {
+        this.toggleSettings(e, '', true, false)
+        document.querySelector('.form-prompt').hidden = true
+      })
 
       this.myForm.addEventListener('submit', (e) => {
         e.preventDefault()
