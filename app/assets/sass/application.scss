@@ -172,6 +172,12 @@ a:visited {
   @include govuk-media-query($from: tablet) {
     padding-bottom: 45px;
   }
+
+  &.v3-section-chunk {
+    @include govuk-media-query($from: tablet) {
+      width: calc(66% + 3px);
+    }
+  }
 }
 
 .caption {
@@ -245,7 +251,6 @@ a:visited {
   }
 }
 
-
 // modify layout 2
 @include govuk-media-query($from: tablet) {
   .is-grid-2 {
@@ -264,5 +269,12 @@ a:visited {
     width: 66%;
     // flex: 1 66%;
     // max-width: calc(50% - 30px);
+  }
+}
+
+// TODO - layout changes needed so we don't have to add such specific sizing styles
+.temporarily-set-width-as-required {
+  @include govuk-media-query($from: tablet) {
+    width: calc(66% + 3px + 60px);
   }
 }

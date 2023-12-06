@@ -1,28 +1,28 @@
-{% extends "layouts/main.html" %}
-{% set pageName="Home" %}
-{% block main %}
+{% extends "layouts/main.html" %} {% set pageName="Home" %} {% block main %}
 
 <main class="govuk-main-wrapper govuk-!-padding-bottom-0" id="main-content" role="main">
   <div class="govuk-width-container">
     <div class="govuk-grid-row">
-      <div class="govuk-grid-column-two-thirds">
+      <div class="govuk-grid-column-full">
         <p class="govuk-body"><a href="v2-statements.html">Back</a></p>
 
         <h1 class="govuk-heading-xl">Find financial support</h1>
 
         <div class="view" id="mySituationForm">
-          <div class="govuk-grid-row">
-            <div class="govuk-grid-column-two-thirds">
-              <h2 class="govuk-heading-m">Your situation</h2>
-            </div>
-            <div class="govuk-grid-column-one-third change-link">
-              <p class="govuk-body-m">
-                <a class="change" href="#" aria-controls="mySituationFormSavedMode" aria-expanded="false">Change <span class="govuk-visually-hidden">your situation</span></a>
-              </p>
+          <div class="temporarily-set-width-as-required">
+            <div class="govuk-grid-row">
+              <div class="govuk-grid-column-two-thirds">
+                <h2 class="govuk-heading-m">Your situation</h2>
+              </div>
+              <div class="govuk-grid-column-one-third change-link">
+                <p class="govuk-body-m">
+                  <a class="change" href="#" aria-controls="mySituationFormSavedMode" aria-expanded="false">Change <span class="govuk-visually-hidden">your situation</span></a>
+                </p>
+              </div>
             </div>
           </div>
 
-          <div class="section-chunk">
+          <div class="section-chunk v3-section-chunk">
             <div class="saved-mode" id="mySituationFormSavedMode">
               <div class="govuk-grid-row">
                 <div class="govuk-grid-column-full">
@@ -78,14 +78,16 @@
         </div>
 
         <div class="view" id="myInformationForm">
-          <div class="govuk-grid-row">
-            <div class="govuk-grid-column-two-thirds">
-              <h2 class="govuk-heading-m">Add more information</h2>
-            </div>
-            <div class="govuk-grid-column-one-third change-link">
-              <p class="govuk-body-m">
-                <a class="change" href="#" aria-controls="yourInformationFormFormMode" aria-expanded="true">Cancel <span class="govuk-visually-hidden">your information</span></a>
-              </p>
+          <div class="temporarily-set-width-as-required">
+            <div class="govuk-grid-row">
+              <div class="govuk-grid-column-two-thirds">
+                <h2 class="govuk-heading-m">Add more information</h2>
+              </div>
+              <div class="govuk-grid-column-one-third change-link">
+                <p class="govuk-body-m">
+                  <a class="change" href="#" aria-controls="yourInformationFormFormMode" aria-expanded="true">Cancel <span class="govuk-visually-hidden">your information</span></a>
+                </p>
+              </div>
             </div>
           </div>
 
@@ -95,7 +97,7 @@
           </div>
 
           <div class="form-mode" id="yourInformationFormFormMode">
-            <div class="section-chunk">
+            <div class="section-chunk v3-section-chunk">
               <div class="govuk-grid-row">
                 <div class="govuk-grid-column-full">
                   <div class="add-criteria" id="yourInformationForm">
@@ -210,7 +212,7 @@
           </div>
 
           <div class="saved-mode">
-            <div class="section-chunk">
+            <div class="section-chunk v3-section-chunk">
               <div id="yourInformation">
                 <div class="govuk-grid-row">
                   <div class="govuk-grid-column-full">
@@ -401,7 +403,6 @@
   </div>
 </main>
 
-{% endblock %}
-{% block pageScripts %}
-  <script src="/public/javascripts/v3-filter-benefits.js"></script>
+{% endblock %} {% block pageScripts %}
+<script src="/public/javascripts/v3-filter-benefits.js"></script>
 {% endblock %}
