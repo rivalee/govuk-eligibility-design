@@ -1,4 +1,6 @@
-{% extends "layouts/main.html" %} {% set pageName="Home" %} {% block main %}
+{% extends "layouts/main.html" %}
+{% set pageName="Home" %}
+{% block main %}
 
 <main class="govuk-main-wrapper govuk-!-padding-bottom-0" id="main-content" role="main">
   <div class="govuk-width-container">
@@ -75,23 +77,175 @@
           </div>
         </div>
 
-        <div class="spacer-3">
-            <h2 class="govuk-heading-m">Add more information</h2>
-            <p><a href="#">Answer a few more questions for more accurate results</a></p>
-        </div>
-     
+        <div class="view" id="myInformationForm">
+          <div class="govuk-grid-row">
+            <div class="govuk-grid-column-two-thirds">
+              <h2 class="govuk-heading-m">Add more information</h2>
+            </div>
+            <div class="govuk-grid-column-one-third change-link">
+              <p class="govuk-body-m">
+                <a class="change" href="#" aria-controls="yourInformationFormFormMode" aria-expanded="true">Cancel <span class="govuk-visually-hidden">your information</span></a>
+              </p>
+            </div>
+          </div>
+
+          <div class="form-prompt">
+            <p>For the most accurate recommendations, answer a few more questions</p>
+            <p><a class="govuk-link prompt" href="#">Answer a few more questions</a></p>
+          </div>
+
+          <div class="form-mode" id="yourInformationFormFormMode">
+            <div class="section-chunk">
+              <div class="govuk-grid-row">
+                <div class="govuk-grid-column-full">
+                  <div class="add-criteria" id="yourInformationForm">
+                    <form method="POST" action="/" id="myForm">
+                      <div class="govuk-form-group">
+                        <fieldset class="govuk-fieldset" role="group" aria-describedby="passport-issued-hint">
+                          <legend class="govuk-fieldset__legend caption">What is your date of birth?</legend>
+
+                          <div class="govuk-date-input" id="passport-issued">
+                            <div class="govuk-date-input__item">
+                              <div class="govuk-form-group">
+                                <label class="govuk-label govuk-date-input__label" for="what_is_your_date_of_birth[day]"> Day </label>
+                                <input class="govuk-input govuk-date-input__input govuk-input--width-2" id="what_is_your_date_of_birth[day]" name="what_is_your_date_of_birth[day]" type="text" inputmode="numeric" />
+                              </div>
+                            </div>
+                            <div class="govuk-date-input__item">
+                              <div class="govuk-form-group">
+                                <label class="govuk-label govuk-date-input__label" for="what_is_your_date_of_birth[month]"> Month </label>
+                                <input class="govuk-input govuk-date-input__input govuk-input--width-2" id="what_is_your_date_of_birth[month]" name="what_is_your_date_of_birth[month]" type="text" inputmode="numeric" />
+                              </div>
+                            </div>
+                            <div class="govuk-date-input__item">
+                              <div class="govuk-form-group">
+                                <label class="govuk-label govuk-date-input__label" for="what_is_your_date_of_birth[year]"> Year </label>
+                                <input class="govuk-input govuk-date-input__input govuk-input--width-4" id="what_is_your_date_of_birth[year]" name="what_is_your_date_of_birth[year]" type="text" inputmode="numeric" />
+                              </div>
+                            </div>
+                          </div>
+                        </fieldset>
+                      </div>
+                      <div class="govuk-form-group">
+                        <fieldset class="govuk-fieldset" aria-describedby="contact-hint">
+                          <legend class="govuk-fieldset__legend">What sort of home do you live in?</legend>
+
+                          <div class="govuk-radios" data-module="govuk-radios">
+                            <div class="govuk-radios__item">
+                              <input class="govuk-radios__input" id="sort_of_home_a" name="are_you_in_temporary,_sheltered_or_supported_housing" type="radio" value="Yes" data-aria-controls="conditional-contact" />
+                              <label class="govuk-label govuk-radios__label" for="sort_of_home_a"> I rent privately </label>
+                            </div>
+                            <div class="govuk-radios__item">
+                              <input class="govuk-radios__input" id="sort_of_home_b" name="are_you_in_temporary,_sheltered_or_supported_housing" type="radio" value="No" data-aria-controls="conditional-contact" />
+                              <label class="govuk-label govuk-radios__label" for="sort_of_home_b"> I rent from a council or housing association </label>
+                            </div>
+                            <div class="govuk-radios__item">
+                              <input class="govuk-radios__input" id="sort_of_home_c" name="are_you_in_temporary,_sheltered_or_supported_housing" type="radio" value="No" data-aria-controls="conditional-contact" />
+                              <label class="govuk-label govuk-radios__label" for="sort_of_home_c"> I have a mortgage </label>
+                            </div>
+                            <div class="govuk-radios__item">
+                              <input class="govuk-radios__input" id="sort_of_home_d" name="are_you_in_temporary,_sheltered_or_supported_housing" type="radio" value="No" data-aria-controls="conditional-contact" />
+                              <label class="govuk-label govuk-radios__label" for="sort_of_home_d"> I own my home outright </label>
+                            </div>
+                            <div class="govuk-radios__item">
+                              <input class="govuk-radios__input" id="sort_of_home_e" name="are_you_in_temporary,_sheltered_or_supported_housing" type="radio" value="No" data-aria-controls="conditional-contact" />
+                              <label class="govuk-label govuk-radios__label" for="sort_of_home_e"> I live in temporary, sheltered or supported housing </label>
+                            </div>
+                          </div>
+                        </fieldset>
+                      </div>
+                      <div class="govuk-form-group">
+                        <fieldset class="govuk-fieldset" aria-describedby="contact-hint">
+                          <legend class="govuk-fieldset__legend">What is your work situation?</legend>
+
+                          <div class="govuk-radios" data-module="govuk-radios">
+                            <div class="govuk-radios__item">
+                              <input class="govuk-radios__input" id="are_you_looking_for_work[a]" name="are_you_looking_for_work" type="radio" value="Yes" data-aria-controls="conditional-contact" />
+                              <label class="govuk-label govuk-radios__label" for="are_you_looking_for_work[a]"> I work more than 16 hours a week </label>
+                            </div>
+                            <div class="govuk-radios__item">
+                              <input class="govuk-radios__input" id="are_you_looking_for_work[b]" name="are_you_looking_for_work" type="radio" value="Yes" data-aria-controls="conditional-contact" />
+                              <label class="govuk-label govuk-radios__label" for="are_you_looking_for_work[b]"> I work less than 16 hours a week </label>
+                            </div>
+                            <div class="govuk-radios__item">
+                              <input class="govuk-radios__input" id="are_you_looking_for_work[c]" name="are_you_looking_for_work" type="radio" value="No" data-aria-controls="conditional-contact" />
+                              <label class="govuk-label govuk-radios__label" for="are_you_looking_for_work[c]"> I’m unemployed and looking for work </label>
+                            </div>
+                            <div class="govuk-radios__item">
+                              <input class="govuk-radios__input" id="are_you_looking_for_work[d]" name="are_you_looking_for_work" type="radio" value="No" data-aria-controls="conditional-contact" />
+                              <label class="govuk-label govuk-radios__label" for="are_you_looking_for_work[d]"> I’m not able to work </label>
+                            </div>
+                            <div class="govuk-radios__item">
+                              <input class="govuk-radios__input" id="are_you_looking_for_work[e]" name="are_you_looking_for_work" type="radio" value="No" data-aria-controls="conditional-contact" />
+                              <label class="govuk-label govuk-radios__label" for="are_you_looking_for_work[e]"> I’m retired </label>
+                            </div>
+                          </div>
+                        </fieldset>
+                      </div>
+                      <div class="govuk-form-group">
+                        <fieldset class="govuk-fieldset" aria-describedby="contact-hint">
+                          <legend class="govuk-fieldset__legend">Do you already get Universal Credit, Pension Credit, Housing Benefit, or income-based Job Seeker's Allowance?</legend>
+
+                          <div class="govuk-radios" data-module="govuk-radios">
+                            <div class="govuk-radios__item">
+                              <input class="govuk-radios__input" id="do_you_already_get_universal_credit,_pension_credit,_or_housing_benefit[yes]" name="do_you_already_get_universal_credit,_pension_credit,_or_housing_benefit" type="radio" value="Yes" data-aria-controls="conditional-contact" />
+                              <label class="govuk-label govuk-radios__label" for="do_you_already_get_universal_credit,_pension_credit,_or_housing_benefit[yes]"> Yes </label>
+                            </div>
+                            <div class="govuk-radios" data-module="govuk-radios">
+                              <div class="govuk-radios__item">
+                                <input class="govuk-radios__input" id="do_you_already_get_universal_credit,_pension_credit,_or_housing_benefit[no]" name="do_you_already_get_universal_credit,_pension_credit,_or_housing_benefit" type="radio" value="No" data-aria-controls="conditional-contact" />
+                                <label class="govuk-label govuk-radios__label" for="do_you_already_get_universal_credit,_pension_credit,_or_housing_benefit[no]"> No </label>
+                              </div>
+                            </div>
+                          </div>
+                        </fieldset>
+                      </div>
+
+                      <button class="govuk-button govuk-button--primary govuk-!-margin-bottom-0 save" type="submit" id="formButton" data-module="govuk-button" aria-controls="mySituationFormSavedMode" aria-expanded="true">Save and update results</button>
+                    </form>
+                  </div>
+                </div>
               </div>
             </div>
+          </div>
+
+          <div class="saved-mode">
+            <div class="section-chunk">
+              <div id="yourInformation">
+                <div class="govuk-grid-row">
+                  <div class="govuk-grid-column-full">
+                    <dl class="govuk-summary-list govuk-!-margin-bottom-0">
+                      <div class="govuk-summary-list__row">
+                        <dd class="govuk-summary-list__value key-formatting">What is your date of birth</dd>
+                        <dd class="govuk-summary-list__value">1 Nov 1961</dd>
+                      </div>
+                      <div class="govuk-summary-list__row">
+                        <dd class="govuk-summary-list__value key-formatting">What sort of home do you live in</dd>
+                        <dd class="govuk-summary-list__value">I live in temporary, sheltered or supported housing</dd>
+                      </div>
+                      <div class="govuk-summary-list__row">
+                        <dd class="govuk-summary-list__value key-formatting">What is your work situation</dd>
+                        <dd class="govuk-summary-list__value">I'm retired</dd>
+                      </div>
+                      <div class="govuk-summary-list__row">
+                        <dd class="govuk-summary-list__value key-formatting">Do you already get Universal Credit, Pension Credit, Housing Benefit, or income-based Job Seeker's Allowance</dd>
+                        <dd class="govuk-summary-list__value">No</dd>
+                      </div>
+                    </dl>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
         </div>
-   
+      </div>
+    </div>
+  </div>
 
   <div class="results-container">
     <div class="govuk-width-container">
       <h2 class="govuk-heading-m">Results</h2>
       <p>8 benefits</p>
-
-  
-
 
       <div class="govuk-grid-row">
         <div class="govuk-grid-column-full">
@@ -247,6 +401,7 @@
   </div>
 </main>
 
-{% endblock %} {% block pageScripts %}
-<script src="/public/javascripts/filter-benefits.js"></script>
+{% endblock %}
+{% block pageScripts %}
+  <script src="/public/javascripts/v3-filter-benefits.js"></script>
 {% endblock %}
